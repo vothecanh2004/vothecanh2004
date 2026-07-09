@@ -5,27 +5,34 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# WebQuiz - Deploying a Real-Time Serverless Quiz Platform on AWS
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+**WebQuiz** is a real-time quiz application designed to simulate engaging live interactive games (similar to Kahoot). In this workshop, you will build and deploy a fully functional serverless architecture on AWS that is highly scalable and optimized for cost.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
-
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+You will learn how to:
+* Configure **Amazon Cognito** for user registration and secure host login.
+* Design and provision **Amazon DynamoDB** tables for persistent storage and dynamic game-state management (replacing Redis).
+* Write and configure on-demand **AWS Lambda** functions to process REST operations, handle WebSocket connections, calculate scores, and save final game results.
+* Set up **Amazon API Gateway** (both HTTP API and WebSocket API) to provide low-latency endpoints for frontend-backend integration.
+* Route game events asynchronously using **Amazon EventBridge** rules.
+* Deploy a Single Page Application (SPA) frontend to **Amazon S3** globally distributed via **Amazon CloudFront** using **Origin Access Control (OAC)**.
+* Construct **Amazon CloudWatch** alarms, metrics, logs, and dashboards to observe system health.
 
 #### Content
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. [Workshop Overview](5.1-Workshop-overview/)
+2. [Prerequisites](5.2-Prerequiste/)
+3. [Cognito Authentication](5.3-Cognito/)
+4. [DynamoDB Tables](5.4-DynamoDB/)
+5. [IAM Permissions & EventBridge](5.5-IAM-EventBridge/)
+6. [Lambda REST Functions](5.6-Lambda-REST/)
+7. [Lambda Realtime Functions](5.7-Lambda-Realtime/)
+8. [API Gateway - HTTP API](5.8-APIGateway-HTTP/)
+9. [API Gateway - WebSocket API](5.9-APIGateway-WebSocket/)
+10. [Frontend Hosting with S3 & CloudFront](5.10-Frontend-Hosting/)
+11. [CloudWatch Monitoring & Dashboard](5.11-Monitoring-Dashboard/)
+12. [System Testing](5.12-Testing/)
+13. [Resource Cleanup](5.13-Cleanup/)
