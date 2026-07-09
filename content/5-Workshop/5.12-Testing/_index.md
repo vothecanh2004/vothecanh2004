@@ -48,7 +48,7 @@ Open **Postman** (or use `curl`) to send a request to your HTTP API Gateway endp
 
 1. **Request Details:**
    * **Method:** `POST`
-   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.us-east-1.amazonaws.com/dev/quizzes`
+   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev/quizzes`
    * **Headers:**
      * `Authorization`: `Bearer YOUR_ID_TOKEN`
      * `Content-Type`: `application/json`
@@ -70,7 +70,7 @@ Initialize a live quiz game session:
 
 1. **Request Details:**
    * **Method:** `POST`
-   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.us-east-1.amazonaws.com/dev/rooms`
+   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev/rooms`
    * **Headers:**
      * `Authorization`: `Bearer YOUR_ID_TOKEN`
    * **Body (JSON):**
@@ -87,7 +87,7 @@ Initialize a live quiz game session:
 
 1. **Request Details:**
    * **Method:** `POST`
-   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.us-east-1.amazonaws.com/dev/rooms/582914/join` (replace `582914` with your active room PIN).
+   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev/rooms/582914/join` (replace `582914` with your active room PIN).
    * **Headers:**
      * `Content-Type`: `application/json`
    * **Body (JSON):**
@@ -107,13 +107,13 @@ Now, simulate the live gameplay using two terminal windows.
 #### 5.1 Host Connection (Terminal 1)
 Open your terminal and connect as the game host:
 ```bash
-wscat -c "wss://YOUR_WS_API_ID.execute-api.us-east-1.amazonaws.com/dev?roomPin=582914&role=host"
+wscat -c "wss://YOUR_WS_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev?roomPin=582914&role=host"
 ```
 
 #### 5.2 Player Connection (Terminal 2)
 Open another terminal window and connect as Alice (the player):
 ```bash
-wscat -c "wss://YOUR_WS_API_ID.execute-api.us-east-1.amazonaws.com/dev?roomPin=582914&orderId=YOUR_PLAYER_ORDER_ID&role=player"
+wscat -c "wss://YOUR_WS_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev?roomPin=582914&orderId=YOUR_PLAYER_ORDER_ID&role=player"
 ```
 
 ---

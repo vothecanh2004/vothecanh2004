@@ -54,7 +54,7 @@ Trong bước này, bạn sẽ cấu hình **Amazon API Gateway HTTP API** để
    * **Authorizer type:** Chọn **JWT**.
    * **Name:** Nhập `CognitoAuthorizer`.
    * **Identity source:** Nhập `$request.header.Authorization`.
-   * **Issuer URL:** Nhập `https://cognito-idp.us-east-1.amazonaws.com/YOUR_USER_POOL_ID` (Thay thế `YOUR_USER_POOL_ID` bằng User Pool ID thực tế đã lưu ở phần Cognito).
+   * **Issuer URL:** Nhập `https://cognito-idp.ap-southeast-1.amazonaws.com/YOUR_USER_POOL_ID` (Thay thế `YOUR_USER_POOL_ID` bằng User Pool ID thực tế đã lưu ở phần Cognito).
    * **Audience:** Nhập **App Client ID** đã lưu ở phần Cognito.
    * Nhấp chọn **Create**.
 
@@ -106,6 +106,6 @@ Liên kết các route đường dẫn của API, tích hợp Lambda và gắn q
 2. Click chọn stage tên là **`dev`**.
 3. Sao chép và lưu trữ URL tại phần **Invoke URL**:
    ```
-   https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev
+   https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev
    ```
    *(Bạn sẽ cần dùng link REST endpoint này để cấu hình cho client frontend sau này).*

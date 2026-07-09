@@ -9,29 +9,46 @@ pre: " <b> 5.3. </b> "
 
 In this step, you will configure **Amazon Cognito** to manage user registration, authentication, and secure access tokens for host users. We will use the new application-centric Cognito console interface.
 
-### 1. Create User Pool (New AWS Console Flow)
+### 1. Create Amazon Cognito User Pool for Web Application (SPA)
 
-1. Open the **[Amazon Cognito console](https://console.aws.amazon.com/cognito/)**.
-2. Click **Create user pool**.
-3. **Step 1 - Define your application:**
-   * **Application type:** Select **Single-page application (SPA)**.
+1. **Open Amazon Cognito Console**
+   * Access Amazon Cognito User Pools: [https://console.aws.amazon.com/cognito/v2/idp/user-pools](https://console.aws.amazon.com/cognito/v2/idp/user-pools)
+   * Click **Create user pool** or **Get started for free in less than five minutes**.
+
+2. **Define your application**
+   * On the Define your application screen:
+   * **Application type:** Select **Single-page application (SPA)**
    * Click **Next**.
-4. **Step 2 - Name your application:**
-   * **Application name:** Enter `webquiz-dev-web-client`.
+
+3. **Name your application**
+   * Enter the information:
+   * **Application name:** `webquiz-dev-web-client`
    * Click **Next**.
-5. **Step 3 - Configure options:**
-   * **Options for sign-in identifiers:** Check ✅ **Email**.
-   * **Required attributes for sign-up:** `email` (default).
+
+4. **Configure options**
+   * Set up sign-in options:
+   * **Options for sign-in identifiers:** Select **Email**
+   * **Required attributes for sign-up:** Keep default as `email`
    * Click **Next**.
-6. **Step 4 - Add a return URL:**
-   * **Return URL:** Enter `http://localhost:3000/callback` (you will use this for local frontend integration).
+
+5. **Add a return URL**
+   * Enter the application's Callback URL: `http://localhost:3000/callback` *(If deploying to Production, replace with the actual application URL)*.
    * Click **Next**.
-7. **Step 5 - Review and create:**
-   * Review all configuration details.
-   * Click **Create your application**.
-8. **Step 6 - Set up your application:**
-   * Cognito will display code integration examples.
-   * Click **Go to overview** to access your User Pool.
+
+6. **Review and create**
+   * Review your settings:
+     * **Application type:** Single-page application (SPA)
+     * **Application name:** `webquiz-dev-web-client`
+     * **Sign-in identifier:** Email
+     * **Callback URL:** `http://localhost:3000/callback`
+   * Then click **Create your application**.
+
+7. **Set up your application**
+   * Upon successful creation, Amazon Cognito will automatically create:
+     * User Pool
+     * App Client (Public Client for SPA)
+   * The Set up your application page will display sample code snippets (Quick setup guide) for integration.
+   * If you don't need to integrate immediately, click **Go to overview** to navigate to the User Pool management page.
 
 ---
 
@@ -62,7 +79,7 @@ Once the User Pool is created, you must configure security policies:
 ### 3. Record Cognito Details
 
 Make sure you copy and save the following credentials from the **User Pool Overview** page:
-*   **User Pool ID:** `us-east-1_xxxxxxxxx`
+*   **User Pool ID:** `ap-southeast-1_xxxxxxxxx`
 *   **App Client ID** (found in the App Clients tab): `xxxxxxxxxxxxxxxxxxxxxxxxxx`
 
 > [!IMPORTANT]
