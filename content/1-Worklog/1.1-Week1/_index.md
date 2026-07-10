@@ -9,10 +9,10 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Understand core Cloud Computing concepts, service models, and cloud deployment models.
-* Master the AWS Global Infrastructure architecture  and the Shared Responsibility Model.
-* Successfully create an AWS Free Tier account and get familiar with the AWS Management Console interface.
-* Configure AWS Budgets within the Billing Dashboard to proactively manage costs and prevent unexpected charges.
+* Understand core Cloud Computing concepts: basic definitions, service models (IaaS, PaaS, SaaS), and deployment models (Public, Private, Hybrid Cloud).
+* Master AWS Global Infrastructure architecture (Region, AZ, Edge Location, Local Zone) and the Shared Responsibility Model.
+* Create an AWS Free Tier account and get familiar with the AWS Management Console interface.
+* Configure AWS Budgets to manage costs and receive alerts, ensuring we stay within Free Tier limits.
 ### Tasks to Implement This Week:
 
 | Day | Task | Start Date | Completion Date | Reference Materials |

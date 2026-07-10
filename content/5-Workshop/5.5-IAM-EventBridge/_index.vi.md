@@ -16,18 +16,22 @@ Trong bước này, bạn sẽ thiết lập phân quyền bảo mật cho các 
 Đầu tiên, chúng ta cần tạo một vai trò IAM Role để cho phép các hàm Lambda giao tiếp an toàn với các dịch vụ khác của AWS.
 
 1. Mở **[Amazon IAM console](https://console.aws.amazon.com/iam/)**.
+![Ảnh 1](/images/5-Workshop/5.5/5.5.1.png)
 2. Trên menu bên trái chọn **Roles**, nhấp chọn **Create role**.
+![Ảnh 2](/images/5-Workshop/5.5/5.5.2.png)
 3. **Step 1 - Select trusted entity:**
    * **Trusted entity type:** Chọn **AWS service**.
    * **Service or use case:** Chọn **Lambda** từ danh sách.
    * Nhấn **Next**.
+   ![Ảnh 3](/images/5-Workshop/5.5/5.5.3.png)
 4. **Step 2 - Add permissions:**
    * Tìm kiếm và tick chọn chính sách managed policy tên là **`AWSLambdaBasicExecutionRole`** (quyền này cho phép các hàm ghi log hoạt động ra CloudWatch).
    * Nhấn **Next**.
+   ![Ảnh 4](/images/5-Workshop/5.5/5.5.4.png)
 5. **Step 3 - Name, review, and create:**
    * **Role name:** Nhập `webquiz-dev-lambda-role`.
    * Nhấp chọn **Create role**.
-
+   ![Ảnh 5](/images/5-Workshop/5.5/5.5.5.png)
 ---
 
 ### 2. Thiết lập Chính sách Phân quyền Custom (Inline Policy)
@@ -78,6 +82,7 @@ Tiếp theo, cấu hình phân quyền chi tiết cho role này truy cập vào 
        ]
    }
    ```
+   ![Ảnh 6](/images/5-Workshop/5.5/5.5.6.png)
 4. Nhấn **Next**.
 5. **Policy name:** Nhập `webquiz-dev-lambda-policy`.
 6. Nhấn **Create policy**.
@@ -89,8 +94,12 @@ Tiếp theo, cấu hình phân quyền chi tiết cho role này truy cập vào 
 Tạo Event Bus để định tuyến các sự kiện chơi game (nộp đáp án, tính điểm, kết thúc game) bất đồng bộ dưới nền.
 
 1. Mở **[Amazon EventBridge console](https://console.aws.amazon.com/events/)**.
+![Ảnh 7](/images/5-Workshop/5.5/5.5.7.png)
 2. Trên menu bên trái chọn **Event buses**, nhấp chọn **Create event bus**.
+![Ảnh 8](/images/5-Workshop/5.5/5.5.8.png)
 3. Trong biểu mẫu khởi tạo:
    * **Name:** Nhập `webquiz-dev-game-events`.
    * **Encryption:** Chọn **Use AWS owned key** (mặc định).
    * Giữ nguyên các thiết lập khác, nhấp chọn **Create**.
+ ![Ảnh 9](/images/5-Workshop/5.5/5.5.9.png)
+ ![Ảnh 10](/images/5-Workshop/5.5/5.5.10.png)

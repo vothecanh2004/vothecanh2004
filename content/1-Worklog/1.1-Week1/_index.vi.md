@@ -10,10 +10,10 @@ pre: " <b> 1.1. </b> "
 
 ### Mục tiêu tuần 1:
 
-* Hiểu các khái niệm cốt lõi về Cloud Computing, các mô hình dịch vụ và mô hình triển khai đám mây.
-* Nắm vững kiến trúc hạ tầng toàn cầu của AWS và mô hình trách nhiệm chung.
-* Khởi tạo thành công tài khoản AWS Free Tier và làm quen với giao diện AWS Management Console.
-* Thiết lập cấu hình AWS Budgets trên Billing Dashboard để chủ động quản lý và cảnh báo chi phí.
+* Hiểu nền tảng Cloud Computing: khái niệm cơ bản, các mô hình dịch vụ (IaaS, PaaS, SaaS) và mô hình triển khai (Public, Private, Hybrid Cloud).
+* Nắm vững kiến trúc hạ tầng toàn cầu của AWS (Region, AZ, Edge Location, Local Zone) và mô hình trách nhiệm chung.
+* Khởi tạo tài khoản AWS Free Tier và làm thạo giao diện AWS Management Console.
+* Cấu hình AWS Budgets để quản lý và cảnh báo chi phí, đảm bảo không vượt quá hạn mức Free Tier.
 
 ### Các công việc cần triển khai trong tuần này:
 

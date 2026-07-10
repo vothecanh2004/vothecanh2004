@@ -61,7 +61,6 @@ Hệ thống sử dụng kiến trúc Serverless hướng sự kiện trên AWS 
 #### 3.1 Sơ đồ kiến trúc hệ thống
 
 ![Sơ đồ kiến trúc hệ thống](/images/2-Proposal/webquiz_architecture.png)
-
 #### 3.2 Các dịch vụ AWS sử dụng
 
 | Phân nhóm | Dịch vụ AWS | Lý do lựa chọn & Vai trò |

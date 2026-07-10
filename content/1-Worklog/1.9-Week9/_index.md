@@ -7,27 +7,28 @@ pre: " <b> 1.9. </b> "
 ---
 
 
-
 ### Week 9 Objectives:
 
-* Differentiate between HTTP REST APIs and WebSocket APIs, and master connection state management via API Gateway, Lambda, and DynamoDB.
-* Understand the core concepts of Amazon SQS queues for system decoupling and asynchronous answer submission processing.
-* Gain hands-on proficiency in provisioning WebSocket APIs, integrating SQS/RDS, and validating multi-player real-time quiz synchronization.
+* Update WEBSOCKET_ENDPOINT environment variable for Lambda functions.
+* Test full WebSocket flow (start game, next question, submit answer, end game).
+* Configure API Gateway stages and optimize.
+* Write detailed API documentation.
+
 
 ### Tasks to be deployed this week:
 | Day | Task | Start Date | End Date | Reference Documentation |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Research WebSockets <br> - Compare HTTP REST APIs and WebSocket APIs <br> - Understand how Lambda handles WebSockets and stores `ConnectionId` in DynamoDB | 15/06/2026   | 15/06/2026      | |
-| Tue | - Analyze game flows: Room Creation, Joining Room, Game Start, Question Switching, Countdown Timer, and Leaderboard Updates <br> - Design the DynamoDB data schema | 16/06/2026   | 16/06/2026      | |
-| Wed | - Research core Amazon SQS concepts <br> - Determine when to leverage SQS within the Quizizz system | 17/06/2026   | 17/06/2026      | |
-| Thu | - Create a WebSocket API in API Gateway <br> - Develop Lambda functions to handle Connect/Disconnect events <br> - Persist `ConnectionId` into DynamoDB <br> - Create an SQS Queue to process Answer Submissions <br> - Save quiz results into Amazon RDS post-processing | 18/06/2026   | 18/06/2026      | |
-| Fri | - **Hands-on:** <br>&emsp; + Create a live quiz room and enable multi-user joining <br>&emsp; + Test real-time question broadcasting via WebSockets <br>&emsp; + Handle real-time player answer submissions <br>&emsp; + Push real-time leaderboard and score updates to all active players | 19/06/2026   | 19/06/2026      
+| Mon | - Get WebSocket Connection URL from API Gateway <br> - Update WEBSOCKET_ENDPOINT for ws-message Lambda <br>- Update WEBSOCKET_ENDPOINT for score-calculator Lambda | 15/06/2026   | 15/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-data-from-backend.html> |
+| Tue | - Test full WebSocket flow: create room, join room <br>- Test START_GAME action <br>- Test NEXT_QUESTION action <br>- Test SUBMIT_ANSWER action <br>- Test END_GAME action | 16/06/2026   | 16/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-test.html> |
+| Wed | - Configure logging for API Gateway stages <br>- Configure throttling if needed <br>- Check and optimize API Gateway performance | 17/06/2026   | 17/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-logging.html> |
+| Thu | - Write API documentation for HTTP API (endpoints, request/response, auth) <br>- Write API documentation for WebSocket (actions, events, message format) | 18/06/2026   | 18/06/2026      | <https://swagger.io/> |
+| Fri | - **Hands-on:** <br>&emsp; + Test full integration between HTTP API and WebSocket API <br>&emsp; + Verify score-calculator receives events from EventBridge <br>&emsp; + Verify WebSocket broadcasts messages to all clients <br>&emsp; + Finalize API documentation | 19/06/2026   | 19/06/2026      
 
 
 ### Key Outcomes Achieved in Week 9:
 
-* Clearly differentiated the operational mechanics between HTTP REST APIs and WebSocket APIs, and mastered how AWS Lambda manages connection states using `ConnectionId` inside Amazon DynamoDB.
-* Established an optimized data schema on DynamoDB and fully grasped complex real-time game loops: Room creation/joining, game start, countdowns, question transitions, and live leaderboard refreshes.
-* Developed a deep understanding of Amazon SQS queues and successfully applied them to decouple the system, handling asynchronous answer submission streams efficiently before saving data to RDS.
-* Provisioned and fully configured an API Gateway WebSocket API integrated with targeted Lambda handlers for `$connect` and `$disconnect` routes.
-* Successfully built and tested the multi-player online examination workflow: Broadcasting questions, collecting student answers, and computing/updating active match scores in real time for all players.
+* Successfully updated WEBSOCKET_ENDPOINT environment variable for required Lambda functions (ws-message and score-calculator).
+* Successfully tested full WebSocket flow: create room, join room, START_GAME, NEXT_QUESTION, SUBMIT_ANSWER, and END_GAME.
+* Fully configured logging and optimized performance for API Gateway stages.
+* Completed writing detailed API documentation for both HTTP API and WebSocket API, including endpoints, request/response format, authentication, and actions/events.
+* Ensured full integration between HTTP API, WebSocket API, Lambda, and EventBridge, with all game flows working correctly.

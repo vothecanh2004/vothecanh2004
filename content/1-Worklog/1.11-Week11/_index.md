@@ -9,22 +9,26 @@ pre: " <b> 1.11. </b> "
 
 ### Week 11 Objectives:
 
-* Deep dive into the AWS Lambda lifecycle and execution environment reuse mechanisms to minimize cold start latencies.
-* Gain proficiency in leveraging Amazon CloudWatch Metrics and Logs to monitor system health and troubleshoot operational errors.
+* Configure WAF (Web Application Firewall) for API Gateway to enhance security.
+* Configure detailed API Gateway logging and monitoring.
+* Write integration documentation for the entire API system.
+* Aggregate and finalize all API and WebSocket related documentation.
 
 
 ### Tasks to be deployed this week:
 | Day | Task | Start Date | End Date | Reference Documentation |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Research how Lambda reuses its Execution Environment | 27/06/2026   | 27/06/2026      | |
-| Tue | - Optimize Static Initialization <br> - Select appropriate Runtimes | 28/06/2026   | 28/06/2026      
-| Wed | - Research Provisioned Concurrency <br> - Configure Provisioned Concurrency for Lambda functions | 29/06/2026   | 29/06/2026      
-| Thu | - Explore Amazon CloudWatch Metrics <br> - Analyze execution Logs within CloudWatch Logs | 30/06/2026   | 30/06/2026      
-| Fri | - **Hands-on:** <br>&emsp; + Benchmark response times prior to optimization <br>&emsp; + Compare and analyze performance metrics before and after optimization | 31/06/2026   | 31/06/2026      
+| Mon | - Learn about AWS WAF and how to integrate with API Gateway <br>- Create WAF Web ACL <br>- Add basic rules (AWSManagedRulesCommonRuleSet) | 27/06/2026   | 27/06/2026      | <https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html> |
+| Tue | - Configure detailed logging for API Gateway (log full request/response) <br>- Configure X-Ray tracing for API Gateway to trace requests <br>- Check logs on CloudWatch | 28/06/2026   | 28/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html> |
+| Wed | - Write detailed integration documentation: <br>&emsp; + API architecture overview <br>&emsp; + How to authenticate (Cognito + JWT) <br>&emsp; + HTTP endpoints <br>&emsp; + WebSocket protocol <br>&emsp; + Example code to call APIs | 29/06/2026   | 29/06/2026      | <https://www.mkdocs.org/> |
+| Thu | - Aggregate all documentation: <br>&emsp; + API reference <br>&emsp; + Postman Collection docs <br>&emsp; + Environment setup guide <br>&emsp; + Troubleshooting guide | 30/06/2026   | 30/06/2026       |
+| Fri | - **Hands-on:** <br>&emsp; + Demo complete API system to team <br>&emsp; + Train team on API usage and Postman Collection <br>&emsp; + Put API system into production-ready state | 31/06/2026   | 31/06/2026      
 
 
 ### Key Outcomes Achieved in Week 11:
 
-* Gained a comprehensive understanding of the AWS Lambda lifecycle and execution environment behaviors.
-* Mastered Amazon CloudWatch monitoring tools, successfully analyzing detailed Metrics and tracking application logs to preemptively identify system errors.
-* Completed practical benchmarking and comparative latency analysis, proving that API response times were significantly reduced post-optimization.
+* Successfully integrated AWS WAF with API Gateway to protect system from common attacks.
+* Fully configured logging and X-Ray tracing for API Gateway, easy to debug and monitor on CloudWatch.
+* Completed writing detailed integration documentation, including architecture, authentication, HTTP endpoints, WebSocket protocol, and example code.
+* Fully aggregated all API and WebSocket related documentation, ready for handover and maintenance.
+* Successfully demoed complete API system to team and ensured system is production-ready.

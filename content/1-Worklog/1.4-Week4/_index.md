@@ -11,9 +11,9 @@ pre: " <b> 1.4. </b> "
 
 ### Week 4 Objectives:
 
-* Understand the object storage mechanics of Amazon S3 and how to optimize costs using different S3 Storage Classes.
-* Master the foundational principles of Amazon RDS (SQL relational database) and Amazon DynamoDB (NoSQL non-relational database).
-* Gain hands-on proficiency on the AWS Console in creating S3 Buckets, configuring Object permissions, and successfully provisioning and connecting to a MySQL instance on Amazon RDS.
+* Understand Amazon S3 object storage mechanics and how to select cost-optimal Storage Classes based on access frequency.
+* Master foundational principles of Amazon RDS (SQL relational database) and Amazon DynamoDB (NoSQL non-relational database).
+* Gain hands-on proficiency in creating S3 Buckets, configuring Object permissions, and provisioning/connecting to a MySQL instance on Amazon RDS.
 
 ### Tasks to Deploy This Week:
 | Day | Task | Start Date | End Date | Resource Links |

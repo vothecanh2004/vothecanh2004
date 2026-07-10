@@ -12,9 +12,9 @@ pre: " <b> 1.3. </b> "
 
 ### Mục tiêu tuần 3:
 
-* Hiểu rõ khái niệm dịch vụ máy chủ ảo Amazon EC2 và cách phân loại các nhóm EC2 Instance Types theo nhu cầu sử dụng.
-* Nắm vững nguyên lý hoạt động của Security Group , Amazon Machine Image (AMI) và ổ đĩa lưu trữ Amazon EBS.
-* Thực hành thành thạo quy trình khởi tạo, quản lý và theo dõi các trạng thái vòng đời của một EC2 Instance trực tiếp trên AWS Console.
+* Hiểu khái niệm dịch vụ Amazon EC2 và cách phân loại các nhóm EC2 Instance Types (General Purpose, Compute Optimized, Memory Optimized, v.v.).
+* Nắm vững nguyên lý hoạt động của Security Group (tường lửa ảo), Amazon Machine Image (AMI) và Amazon EBS (ổ đĩa lưu trữ block).
+* Thực hành thành thạo khởi tạo, quản lý và theo dõi các trạng thái vòng đời của EC2 Instance trên AWS Console.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |

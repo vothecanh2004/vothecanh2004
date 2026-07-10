@@ -7,26 +7,28 @@ pre: " <b> 1.10. </b> "
 ---
 
 
-
 ### Week 10 Objectives:
 
-* Establish and organize structured Postman Collections for the entire backend API ecosystem.
-* Conduct end-to-end testing covering Cognito/JWT authentication, logical CRUD operations, S3 file uploads, and edge case error handling.
+* Final testing for all APIs (HTTP and WebSocket).
+* Create complete Postman Collection with all endpoints and WebSocket requests.
+* Load test API Gateway to ensure performance.
+* Fix API and WebSocket related bugs.
 
 
 ### Tasks to be deployed this week:
 | Day | Task | Start Date | End Date | Reference Documentation |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Create a dedicated Collection for the Authentication API <br> - Create a dedicated Collection for the Quiz API <br> - Create a dedicated Collection for the Question API | 22/06/2026   | 22/06/2026      | |
-| Tue | - Create a dedicated Collection for the Room API <br> - Create a dedicated Collection for the Upload API | 23/06/2026   | 23/06/2026      | |
-| Wed | - Test Register and Login workflows using Cognito <br> - Validate JWT Authorization <br> - Verify Quiz CRUD operations <br> - Verify Question CRUD operations <br> - Test image uploads to Amazon S3 <br> - Execute negative testing for various edge/error cases | 24/06/2026   | 24/06/2026      | |
-| Thu | - Research how Newman handles Pass/Fail execution results to support automated testing environments | 25/06/2026   | 25/06/2026      | |
-| Fri | - **Hands-on:** <br>&emsp; + Run the complete set of Postman Collections <br>&emsp; + Export complete test execution reports <br>&emsp; + Debug and fix failing API endpoints <br>&emsp; + Re-verify all Authentication, CRUD, Upload, and Realtime APIs | 26/06/2026   | 26/06/2026     
+| Mon | - Final test all HTTP API endpoints (Quiz CRUD, Question CRUD, Room APIs) <br> - Test error cases (400, 401, 403, 404, 500) <br>- Test rate limiting if configured | 22/06/2026   | 22/06/2026      | <https://learning.postman.com/> |
+| Tue | - Final test WebSocket API with all actions (START_GAME, NEXT_QUESTION, SUBMIT_ANSWER, END_GAME) <br>- Test WebSocket events (GAME_STARTED, NEXT_QUESTION, ANSWER_RECEIVED, SCORE_UPDATE, GAME_ENDED) | 23/06/2026   | 23/06/2026      | <https://www.postman.com/product/websocket/> |
+| Wed | - Create complete Postman Collection: <br>&emsp; + Folder for Authentication <br>&emsp; + Folder for Quiz APIs <br>&emsp; + Folder for Room APIs <br>&emsp; + Folder for WebSocket Testing <br>- Add examples for request/response | 24/06/2026   | 24/06/2026      | <https://learning.postman.com/docs/sending-requests/websocket/websocket/> |
+| Thu | - Load test API Gateway with many concurrent requests <br>- Check CloudWatch Metrics for latency and error rate | 25/06/2026   | 25/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-metrics.html> |
+| Fri | - **Hands-on:** <br>&emsp; + Fix all bugs found during testing <br>&emsp; + Optimize API performance if needed <br>&emsp; + Export Postman Collection and share with team <br>&emsp; + Write usage guide for Postman Collection | 26/06/2026   | 26/06/2026      
 
 
 ### Key Outcomes Achieved in Week 10:
 
-* Successfully generated and structured detailed Postman Collections for the entire system API framework.
-* Conducted comprehensive end-to-end testing covering Cognito sign-up/sign-in flows, JWT verification, backend CRUD operations, and Amazon S3 uploads, identifying and correcting error scenarios early on.
-* Executed and signed off on the complete Postman Collection pipeline, exported definitive test run reports, and resolved all encountered software bugs.
-* Ensured the core API system functions with optimal stability and synchronization across authentication layers, logical data streams, and active real-time connections.
+* Successfully final tested all HTTP API and WebSocket API, including both success and error cases.
+* Created complete Postman Collection with scientific structure, including Authentication, Quiz APIs, Room APIs, and WebSocket Testing, with examples.
+* Performed load testing and confirmed API Gateway handles many concurrent requests, checked Metrics on CloudWatch.
+* Fixed all API and WebSocket related bugs found during testing.
+* Exported Postman Collection and wrote usage guide, shared with team for easy testing and development.

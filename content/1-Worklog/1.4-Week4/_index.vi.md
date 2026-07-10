@@ -12,9 +12,9 @@ pre: " <b> 1.4. </b> "
 
 ### Mục tiêu tuần 4:
 
-* Hiểu rõ cơ chế lưu trữ đối tượng của Amazon S3 và cách tối ưu hóa chi phí thông qua các nhóm S3 Storage Classes.
-* Nắm vững kiến thức nền tảng về cơ sở dữ liệu quan hệ Amazon RDS (SQL) và cơ sở dữ liệu phi quan hệ Amazon DynamoDB (NoSQL).
-* Thực hành thành thạo trên AWS Console: Tạo S3 Bucket, cấu hình phân quyền Object và khởi tạo, kết nối thành công một cơ sở dữ liệu MySQL Instance trên Amazon RDS.
+* Hiểu cơ chế lưu trữ đối tượng của Amazon S3 và cách lựa chọn Storage Classes tối ưu chi phí dựa trên tần suất truy cập.
+* Nắm vững nền tảng về cơ sở dữ liệu quan hệ Amazon RDS (SQL) và phi quan hệ Amazon DynamoDB (NoSQL).
+* Thực hành thành thạo: tạo S3 Bucket, cấu hình phân quyền Object, khởi tạo và kết nối MySQL Instance trên Amazon RDS.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |

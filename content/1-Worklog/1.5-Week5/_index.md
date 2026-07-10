@@ -10,9 +10,9 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-* Master the foundational concepts of Amazon VPC, including the configuration of Public/Private Subnets and Internet routing via Internet Gateways and NAT Gateways.
-* Clearly understand the roles of Amazon CloudWatch for resource monitoring and AWS CloudTrail for security API auditing.
-* Consolidate and review all core AWS services learned so far (IAM, EC2, S3, RDS, DynamoDB, VPC, CloudWatch) to prepare for the upcoming stages.
+* Master foundational concepts of Amazon VPC, including Public/Private Subnet configuration and Internet routing via Internet Gateways and NAT Gateways.
+* Understand the roles of Amazon CloudWatch (monitoring, alerting) and AWS CloudTrail (API history logging).
+* Consolidate and review all core AWS services learned (IAM, EC2, S3, RDS, DynamoDB, VPC, CloudWatch, CloudTrail) to prepare for the project deployment phase.
 
 ### Tasks to Deploy This Week:
 | Day | Task | Start Date | End Date | Resource Links |

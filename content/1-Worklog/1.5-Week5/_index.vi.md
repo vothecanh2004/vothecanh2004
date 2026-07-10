@@ -10,9 +10,9 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu tuần 5:
 
-* Nắm vững kiến thức nền tảng về Amazon VPC, cách thiết lập Public/Private Subnet và cơ chế định tuyến Internet qua Internet Gateway và NAT Gateway.
-* Hiểu rõ vai trò của Amazon CloudWatch trong việc giám sát tài nguyên và AWS CloudTrail trong việc ghi vết lịch sử cuộc gọi API bảo mật.
-* Hệ thống hóa và củng cố toàn bộ khối kiến thức cốt lõi đã học (IAM, EC2, S3, RDS, DynamoDB, VPC, CloudWatch) để chuẩn bị cho giai đoạn tiếp theo.
+* Nắm vững kiến thức nền tảng về Amazon VPC, cách thiết lập Public/Private Subnet và định tuyến qua Internet Gateway/NAT Gateway.
+* Hiểu vai trò của Amazon CloudWatch (giám sát, cảnh báo) và AWS CloudTrail (ghi vết lịch sử API).
+* Hệ thống hóa và củng cố toàn bộ kiến thức cốt lõi đã học (IAM, EC2, S3, RDS, DynamoDB, VPC, CloudWatch, CloudTrail) để chuẩn bị cho giai đoạn triển khai dự án.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |

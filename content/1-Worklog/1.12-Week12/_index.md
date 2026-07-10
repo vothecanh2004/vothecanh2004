@@ -9,24 +9,26 @@ pre: " <b> 1.12. </b> "
 
 ### Week 12 Objectives:
 
-* Conduct full end-to-end integration testing between Frontend and Backend, validating the concurrent stability of both REST and WebSocket APIs.
-* Execute final acceptance testing for all core functional workflows (Authentication, Quiz creation, Room management, and multiplayer interactions).
-* Monitor system health via CloudWatch and SQS to identify, debug, and resolve any remaining software defects.
-* Optimize database (RDS) queries, review access control permissions (S3), and complete the final regression check for project sign-off.
+* Perform final integration testing between API Gateway (HTTP and WebSocket) and the entire system.
+* Ensure API synchronization and stability in production environment.
+* Complete final documentation and project handover.
+* Conduct training for the team on API maintenance and future development.
+
+
 ### Tasks to be deployed this week:
 | Day | Task | Start Date | End Date | Reference Documentation |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Verify the connection between Frontend and Backend <br> - Test Amazon Cognito integration with API Gateway <br> - Verify Lambda connections to Amazon RDS <br> - Test Lambda access to Amazon S3 <br> - Verify API Gateway REST and WebSocket APIs operating concurrently | 06/08/2026   | 06/08/2026      | |
-| Tue | - Test the Sign Up → Login user flow <br> - Test Quiz creation mechanics <br> - Test Room creation flows <br> - Test multi-player room joining capabilities | 07/08/2026   | 07/08/2026      | |
-| Wed | - Monitor Amazon CloudWatch Metrics <br> - Inspect Amazon CloudWatch Logs <br> - Verify Amazon SQS queue processing behaviors | 08/08/2026   | 08/08/2026      | |
-| Thu | - Debug and resolve issues identified during testing <br> - Optimize API performance and Database Queries <br> - Double-check S3 bucket access permissions | 09/08/2026   | 09/08/2026      | |
-| Fri | - Execute final full-feature regression testing | 10/08/2026   | 10/08/2026      
+| Mon | - Final integration testing of HTTP API, WebSocket API, Lambda, and EventBridge <br> - Test complete game flow end-to-end via APIs <br>- Verify synchronization of real-time features | 06/08/2026   | 06/08/2026      | <https://docs.aws.amazon.com/apigateway/> |
+| Tue | - Final API Gateway performance testing under load <br>- Verify WAF rules are working correctly <br>- Check logging and monitoring are fully operational | 07/08/2026   | 07/08/2026      | <https://docs.aws.amazon.com/waf/> |
+| Wed | - Complete final documentation (API reference, architecture docs, maintenance guide) <br>- Prepare project handover package | 08/08/2026   | 08/08/2026      | |
+| Thu | - Team training on API usage and maintenance <br>- Demo API development best practices <br>- Q&A session | 09/08/2026   | 09/08/2026      | |
+| Fri | - Project sign-off and handover <br>- Save and archive all documentation | 10/08/2026   | 10/08/2026      
 
 
 ### Key Outcomes Achieved in Week 12:
 
-* Successfully conducted end-to-end integration testing across the entire system infrastructure, validating seamless connectivity between Frontend, Backend, Cognito, API Gateway, Lambda, RDS, and S3.
-* Confirmed system stability while running concurrent workflows for both API Gateway REST and WebSocket APIs in a live production simulation.
-* Finalized user acceptance testing (UAT) for all core application modules: Sign Up/Sign In, Quiz authoring, Room configuration, and real-time multiplayer connections.
-* Strictly monitored performance metrics and queue operations through Amazon SQS while digging deep into execution traces with Amazon CloudWatch Metrics/Logs.
-* Resolved all remaining software bugs, successfully optimized relational database (RDS) queries, and tightened S3 security permissions, ensuring the full-stack architecture is 100% production-ready.
+* Successfully performed final integration testing for the entire API system (HTTP and WebSocket), ensuring the complete game flow works smoothly.
+* Confirmed API Gateway performs well under load and WAF rules effectively protect the system.
+* Completed and archived all final documentation, including API reference, architecture docs, and maintenance guide.
+* Successfully trained the team on how to use, maintain, and develop APIs in the future.
+* Successfully handed over the project and ensured the API system is 100% ready for production.

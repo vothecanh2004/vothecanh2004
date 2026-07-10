@@ -8,11 +8,10 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Objectives:
 
-
-
 * Understand the core role of AWS IAM in identity management, access control, and cloud resource security.
-* Master the concepts, structures, and differences between IAM Users, Groups, Policies, Roles, as well as the security risks associated with the Root Account.
-* Gain hands-on proficiency on the AWS Console in creating Users/Groups, configuring and attaching IAM Policies, and verifying user access permissions.
+* Master core concepts: IAM User, Group, Policy, Role, and clearly differentiate between them.
+* Recognize security risks of the Root Account and best practices to protect the account.
+* Gain hands-on proficiency in creating Users/Groups, attaching Policies, and verifying access permissions on the AWS Console.
 
 ### Tasks to Deploy This Week:
 | Day | Task | Start Date | End Date | Resource Links |

@@ -10,8 +10,8 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Objectives:
 
-* Clearly understand the Amazon EC2 virtual server service and how to classify EC2 Instance Types based on computing needs.
-* Master the core operational principles of Security Groups , Amazon Machine Images (AMIs), and Amazon EBS storage volumes.
+* Understand the Amazon EC2 virtual server service and how to classify EC2 Instance Types (General Purpose, Compute Optimized, Memory Optimized, etc.) based on computing needs.
+* Master core operational principles of Security Groups (virtual firewall), Amazon Machine Images (AMIs), and Amazon EBS (block storage volumes).
 * Gain hands-on proficiency in launching, managing, and monitoring the lifecycle states of an EC2 Instance directly within the AWS Console.
 
 ### Tasks to Deploy This Week:

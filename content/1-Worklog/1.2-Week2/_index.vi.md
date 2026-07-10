@@ -11,9 +11,10 @@ pre: " <b> 1.2. </b> "
 
 ### Mục tiêu tuần 2:
 
-* Hiểu rõ vai trò của dịch vụ AWS IAM trong việc quản lý danh tính, phân quyền và bảo mật tài nguyên đám mây.
-* Nắm vững khái niệm, cấu trúc và sự khác biệt giữa IAM User, Group, Policy, Role cũng như các rủi ro bảo mật của Root Account.
-* Thực hành thành thạo trên AWS Console các thao tác: Tạo User/Group, cấu hình và gán IAM Policy, đồng thời kiểm tra chính xác quyền truy cập sau phân quyền.
+* Hiểu vai trò và tầm quan trọng của AWS IAM trong quản lý danh tính và phân quyền bảo mật tài nguyên.
+* Nắm vững các khái niệm cốt lõi: IAM User, Group, Policy, Role và phân biệt rõ ràng giữa chúng.
+* Nhận thức được rủi ro bảo mật của Root Account và các best practices bảo vệ tài khoản.
+* Thực hành thành thạo tạo User/Group, gán Policy và kiểm tra quyền truy cập trên AWS Console.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |

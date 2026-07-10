@@ -12,20 +12,26 @@ Trong bước này, bạn sẽ cấu hình dịch vụ **Amazon Cognito** để 
 ### 1. Tạo User Pool (Giao diện console AWS mới nhất)
 
 1. Mở **[Amazon Cognito console](https://console.aws.amazon.com/cognito/)**.
+![Ảnh 1](/images/5-Workshop/5-3-1.jpg)
 2. Nhấn **Create user pool**.
+![Ảnh 2](/images/5-Workshop/5-3-2.jpg)
 3. **Step 1 - Define your application:**
    * **Application type:** Chọn **Single-page application (SPA)**.
    * Nhấn **Next**.
+![Ảnh 3](/images/5-Workshop/5-3-3.jpg)
 4. **Step 2 - Name your application:**
    * **Application name:** Nhập `webquiz-dev-web-client`.
    * Nhấn **Next**.
+![Ảnh 4](/images/5-Workshop/5-3-4.jpg)
 5. **Step 3 - Configure options:**
    * **Options for sign-in identifiers:** Tick chọn ✅ **Email**.
    * **Required attributes for sign-up:** Mặc định là `email`.
    * Nhấn **Next**.
+![Ảnh 5](/images/5-Workshop/5-3-5.jpg)
 6. **Step 4 - Add a return URL:**
    * **Return URL:** Nhập `http://localhost:3000/callback` (sẽ dùng để kiểm thử ứng dụng chạy frontend ở local).
    * Nhấn **Next**.
+![Ảnh 6](/images/5-Workshop/5-3-6.jpg)
 7. **Step 5 - Review and create:**
    * Kiểm tra kỹ lại toàn bộ cấu hình.
    * Nhấn **Create your application**.

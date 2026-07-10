@@ -9,24 +9,26 @@ pre: " <b> 1.10. </b> "
 
 ### Mục tiêu tuần 10:
 
-* Thiết lập và tổ chức cấu trúc Postman Collections khoa học cho toàn bộ hệ thống API dự án.
-* Tiến hành kiểm thử End-to-End quy trình xác thực (Cognito, JWT), các tác vụ CRUD dữ liệu, upload tệp tin lên S3 và xử lý kịch bản lỗi.
-
+* Final testing cho toàn bộ APIs (HTTP và WebSocket).
+* Tạo Postman Collection hoàn chỉnh với tất cả endpoints và WebSocket requests.
+* Load testing API Gateway để đảm bảo hiệu năng.
+* Fix bugs liên quan đến API và WebSocket.
 
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tạo Collection cho Authentication API. <br> - Tạo Collection cho Quiz API. <br>- Tạo Collection cho Question API.                                                                               | 22/06/2026   | 22/06/2026      |
-| 3   | - Tạo Collection cho Room API.   <br>- Tạo Collection cho Upload API.                                 | 23/06/2026   | 23/06/2026      
-| 4   | - Kiểm thử Register và Login bằng Cognito. <br> - Kiểm thử JWT Authorization. <br>- Kiểm thử CRUD Quiz. <br>- Kiểm thử CRUD Question.<br>- Kiểm thử Upload ảnh lên Amazon S3. <br>- Kiểm thử các trường hợp lỗi |24/06/2026  | 24/06/2026      
-| 5   | - Tìm hiểu cách Newman trả về kết quả Pass/Fail để hỗ trợ kiểm thử tự động.         | 25/06/2026   | 25/06/2026      
-| 6   | - **Thực hành:** <br>&emsp; + Chạy toàn bộ Postman Collection. <br>&emsp; + Xuất báo cáo kết quả kiểm thử. <br>&emsp; + Sửa các API bị lỗi. <br>&emsp; + Kiểm tra lại toàn bộ Authentication, CRUD, Upload và Realtime API.                                                                                        | 26/06/2026   | 26/06/2026      
+| 2   | - Final test tất cả HTTP API endpoints (CRUD Quiz, CRUD Question, Room APIs) <br> - Test các trường hợp lỗi (400, 401, 403, 404, 500) <br>- Test rate limiting nếu có                                                                               | 22/06/2026   | 22/06/2026      | <https://learning.postman.com/> |
+| 3   | - Final test WebSocket API với tất cả actions (START_GAME, NEXT_QUESTION, SUBMIT_ANSWER, END_GAME) <br>- Test WebSocket events (GAME_STARTED, NEXT_QUESTION, ANSWER_RECEIVED, SCORE_UPDATE, GAME_ENDED)                                 | 23/06/2026   | 23/06/2026      | <https://www.postman.com/product/websocket/> |
+| 4   | - Tạo Postman Collection hoàn chỉnh: <br>&emsp; + Folder cho Authentication <br>&emsp; + Folder cho Quiz APIs <br>&emsp; + Folder cho Room APIs <br>&emsp; + Folder cho WebSocket Testing <br>- Thêm examples cho request/response |24/06/2026  | 24/06/2026      | <https://learning.postman.com/docs/sending-requests/websocket/websocket/> |
+| 5   | - Load testing API Gateway với nhiều request đồng thời <br>- Kiểm tra CloudWatch Metrics để xem latency và error rate         | 25/06/2026   | 25/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-metrics.html> |
+| 6   | - **Thực hành:** <br>&emsp; + Fix tất cả bugs phát hiện trong quá trình testing <br>&emsp; + Optimize API performance nếu cần <br>&emsp; + Xuất Postman Collection và chia sẻ với nhóm <br>&emsp; + Viết hướng dẫn sử dụng Postman Collection                                                                                        | 26/06/2026   | 26/06/2026      
 
 
 ### Kết quả đạt được tuần 10:
 
-* Khởi tạo và tổ chức thành công các Postman Collection chi tiết cho toàn bộ hệ thống API.
-* Thực hiện kiểm thử toàn diện quy trình đăng ký/đăng nhập qua Cognito, xác thực JWT, các luồng CRUD dữ liệu và upload tệp tin lên Amazon S3; phát hiện và xử lý kịp thời các kịch bản lỗi .
-* Chạy nghiệm thu toàn bộ Postman Collection, xuất báo cáo kết quả kiểm thử hoàn chỉnh và khắc phục triệt để các lỗi phát sinh.
-* Đảm bảo hệ thống API chạy ổn định, đồng bộ từ khâu xác thực, xử lý dữ liệu cho đến các kết nối thời gian thực (Realtime API).
+* Final test thành công toàn bộ HTTP API và WebSocket API, bao gồm cả các trường hợp thành công và lỗi.
+* Tạo hoàn chỉnh Postman Collection với cấu trúc khoa học, bao gồm Authentication, Quiz APIs, Room APIs và WebSocket Testing, kèm examples.
+* Thực hiện load testing và đảm bảo API Gateway xử lý được nhiều request đồng thời, kiểm tra Metrics trên CloudWatch.
+* Fix tất cả bugs liên quan đến API và WebSocket phát hiện trong quá trình testing.
+* Xuất Postman Collection và viết hướng dẫn sử dụng, chia sẻ với nhóm để dễ dàng testing và phát triển.

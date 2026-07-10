@@ -10,29 +10,26 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu tuần 6:
 
-* Khởi tạo cấu trúc mã nguồn dự án Frontend/Backend và thiết lập quy trình quản lý mã nguồn (Git Flow).
-* Hoàn thiện thiết kế sơ đồ thực thể mối quan hệ (ERD) và giao diện người dùng (UI) cho các luồng tính năng cốt lõi.
-* Cấu hình đồng bộ các dịch vụ lưu trữ, serverless và database trên AWS (S3, RDS, Lambda, API Gateway).
+* Nghiên cứu và thiết kế kiến trúc API (HTTP và WebSocket) cho hệ thống Web Quiz.
+* Học cách sử dụng AWS API Gateway và chuẩn bị môi trường testing với Postman.
+* Thực hành tạo các API cơ bản và hiểu rõ luồng làm việc với API Gateway.
 
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Khởi tạo Repository GitHub <br> - Thiết lập Git Flow <br>- Tạo Backend Project <br>- Tạo Frontend Project                                                                                             | 25/05/2026   | 25/05/2026      |
-| 3   | - Thiết kế Database <br>- Thiết kế ERD <br>- Thiết kế bảng:Users, Quiz, Questions, Room...                                            | 26/05/2026   | 26/05/2026      
-| 4   | - Thiết kế UI <br>- Login<br>- Register<br>- Dashboard <br>- Quiz List<br>- Join Room | 27/05/2026   | 27/05/2026      
-| 5   | - Cấu hình AWS <br>- S3 <br>- RDS <br>- Lambda <br>- API Gateway                  | 28/05/2026   | 28/05/2026      
-| 6   | - **Thực hành:** <br>&emsp; + Deploy Frontend lên S3 <br>&emsp; + Test API Gateway <br>&emsp; + Kết nối Frontend → Backend                                                                                         | 29/05/2026   | 29/05/2026      
+| 2   | - Nghiên cứu thiết kế kiến trúc API (HTTP REST và WebSocket) <br> - Xác định các endpoints cần thiết cho hệ thống Quiz <br>- Tìm hiểu cách API Gateway hoạt động với Lambda                                                                                             | 25/05/2026   | 25/05/2026      | <https://docs.aws.amazon.com/apigateway/> |
+| 3   | - Thiết kế cấu trúc request/response cho các API <br>- Vẽ sơ đồ luồng dữ liệu qua API Gateway <br>- Chuẩn bị specification cho các routes                                            | 26/05/2026   | 26/05/2026      | <https://swagger.io/> |
+| 4   | - Tạo Postman Workspace <br>- Thiết lập Postman Environment variables <br>- Tạo cấu trúc thư mục Collections cho API | 27/05/2026   | 27/05/2026      | <https://www.postman.com/> |
+| 5   | - Tìm hiểu HTTP API trên API Gateway <br>- Tìm hiểu WebSocket API trên API Gateway <br>- Học cách cấu hình CORS cho API Gateway                  | 28/05/2026   | 28/05/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html> |
+| 6   | - **Thực hành:** <br>&emsp; + Tạo một HTTP API đơn giản trên API Gateway <br>&emsp; + Test API với Postman <br>&emsp; + Thực hành kết nối API Gateway với một Lambda function mẫu                                                                                         | 29/05/2026   | 29/05/2026      
 
 
 ### Kết quả đạt được tuần 6:
 
-* Khởi tạo thành công kiến trúc mã nguồn cho cả dự án Frontend và Backend.
-
-* Hoàn thành thiết kế sơ đồ thực thể mối quan hệ (ERD) và cấu trúc cơ sở dữ liệu chi tiết cho các bảng cốt lõi của ứng dụng.
-
-* Nắm vững cách cấu hình và tích hợp các dịch vụ Serverless và Database của AWS:
-  * Khởi tạo S3 bucket để lưu trữ dữ liệu tĩnh.
-  * Cấu hình cơ sở dữ liệu quan hệ trên AWS RDS.
-  * Triển khai mã nguồn xử lý logic thông qua AWS Lambda.
+* Nghiên cứu và thiết kế thành công kiến trúc API hoàn chỉnh cho hệ thống Web Quiz, bao gồm cả HTTP REST API và WebSocket API.
+* Xác định rõ ràng các endpoints cần thiết và luồng dữ liệu qua API Gateway.
+* Chuẩn bị hoàn chỉnh môi trường testing với Postman, bao gồm Workspace, Environment variables và cấu trúc Collections.
+* Nắm vững kiến thức cơ bản về HTTP API và WebSocket API trên AWS API Gateway, cũng như cách cấu hình CORS.
+* Thực hành thành công tạo HTTP API đơn giản và kết nối với Lambda function, đồng thời test được API qua Postman.
 

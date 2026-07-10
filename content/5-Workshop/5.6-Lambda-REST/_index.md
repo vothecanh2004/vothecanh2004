@@ -17,6 +17,7 @@ This function manages standard CRUD operations for quizzes and questions.
 
 1. Open the **[AWS Lambda console](https://console.aws.amazon.com/lambda/)**.
 2. Click **Create function**.
+![Image 1](/images/5-Workshop/5.6/5.6.1.png)
 3. Select **Author from scratch** and configure:
    * **Function name:** `webquiz-dev-quiz-crud`
    * **Runtime:** Select **Node.js 20.x**.
@@ -25,6 +26,8 @@ This function manages standard CRUD operations for quizzes and questions.
      * Select **Use an existing role**.
      * **Existing role:** Select `webquiz-dev-lambda-role`.
    * Click **Create function**.
+![Image 2](/images/5-Workshop/5.6/5.6.2.png)
+![Image 3](/images/5-Workshop/5.6/5.6.3.png)
 4. In the function details screen, go to the **Configuration** tab:
    * **General configuration** → Click **Edit**:
      * Set **Memory** to `256` MB.
