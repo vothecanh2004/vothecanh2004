@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 1"
+title: " Week 1 Worklog "
 date: 2026-07-07
 weight: 1
 chapter: false
@@ -17,11 +17,11 @@ pre: " <b> 1.1. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Materials |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mon | - Learn what Cloud Computing is.<br>- Learn about cloud service models.<br>- Learn about cloud deployment models: Public Cloud, Private Cloud, and Hybrid Cloud. | 20/04/2026 | 20/04/2026 | https://builder.aws.com/content/2pABbusi3BCqKa2HQzIgG0vmoDd/how-to-get-started-learning-the-aws-cloud<br>https://skillbuilder.aws/getstarted |
-| Tue | - Learn about AWS Global Infrastructure.<br>- Research Regions, Availability Zones (AZs), Edge Locations, and Local Zones. | 21/04/2026 | 21/04/2026 | https://aws.amazon.com/about-aws/global-infrastructure/<br>https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html |
-| Wed | - Register for an AWS Free Tier account.<br>- Log in to the AWS Management Console.<br>- Search for and pin IAM, EC2, and Amazon S3 services to Favorites.<br>- View the Dashboard and track the AWS Free Tier usage. | 22/04/2026 | 22/04/2026 | https://aws.amazon.com/free/<br>https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/what-is.html |
-| Thu | - Learn about AWS pricing mechanisms and AWS Free Tier details. | 23/04/2026 | 23/04/2026 | https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html<br>https://aws.amazon.com/pricing/ |
-| Fri | - Practice using the AWS Console.<br>&emsp;<br>&emsp;+ Explore IAM, EC2, and S3 services.<br>&emsp;+ Check the Billing Dashboard.<br>&emsp;+ Create a Budget alert to prevent unexpected charges outside the Free Tier.<br>- Review all knowledge learned throughout the week. | 24/04/2026 | 24/04/2026 | https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html<br>https://builder.aws.com/learn |
+| Mon | - Learn what Cloud Computing is.<br>- Learn about cloud service models.<br>- Learn about cloud deployment models: Public Cloud, Private Cloud, and Hybrid Cloud. | 20/04/2026 | 20/04/2026 | https://builder.aws.com/ |
+| Tue | - Learn about AWS Global Infrastructure.<br>- Research Regions, Availability Zones (AZs), Edge Locations, and Local Zones. | 21/04/2026 | 21/04/2026 | https://aws.amazon.com/vi/?nc2=h_home |
+| Wed | - Register for an AWS Free Tier account.<br>- Log in to the AWS Management Console.<br>- Search for and pin IAM, EC2, and Amazon S3 services to Favorites.<br>- View the Dashboard and track the AWS Free Tier usage. | 22/04/2026 | 22/04/2026 | https://aws.amazon.com/free/ |
+| Thu | - Learn about AWS pricing mechanisms and AWS Free Tier details. | 23/04/2026 | 23/04/2026 | https://aws.amazon.com/pricing/ |
+| Fri | - Practice using the AWS Console.<br>&emsp;<br>&emsp;+ Explore IAM, EC2, and S3 services.<br>&emsp;+ Check the Billing Dashboard.<br>&emsp;+ Create a Budget alert to prevent unexpected charges outside the Free Tier.<br>- Review all knowledge learned throughout the week. | 24/04/2026 | 24/04/2026 | https://builder.aws.com/ |
 
 ### Week 1 Key Achievements:
 

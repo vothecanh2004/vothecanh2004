@@ -18,10 +18,10 @@ pre: " <b> 1.7. </b> "
 ### Tasks to be deployed this week:
 | Day | Task | Start Date | End Date | Reference Documentation |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Create HTTP API on API Gateway <br> - Configure API name and IP address type <br>- Create dev stage with auto-deploy enabled | 01/06/2026   | 01/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html> |
-| Tue | - Configure CORS for HTTP API <br>- Set up Access-Control-Allow-Origin, Headers, Methods, Max-Age | 02/06/2026   | 02/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html> |
-| Wed | - Create JWT Authorizer <br>- Link Authorizer to Cognito User Pool <br>- Configure audience (App Client ID) | 03/06/2026   | 03/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-jwt-authorizer.html> |
-| Thu | - Create Integrations for Lambda functions (quiz-crud, room-management) <br>- Create routes: /quizzes, /quizzes/{proxy+}, /rooms, /rooms/{pin}, /rooms/{pin}/join | 04/06/2026   | 04/06/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html> |
+| Mon | - Create HTTP API on API Gateway <br> - Configure API name and IP address type <br>- Create dev stage with auto-deploy enabled | 01/06/2026   | 01/06/2026      | https://docs.aws.amazon.com/ |
+| Tue | - Configure CORS for HTTP API <br>- Set up Access-Control-Allow-Origin, Headers, Methods, Max-Age | 02/06/2026   | 02/06/2026      | <https://docs.aws.amazon.com/> |
+| Wed | - Create JWT Authorizer <br>- Link Authorizer to Cognito User Pool <br>- Configure audience (App Client ID) | 03/06/2026   | 03/06/2026      | <https://docs.aws.amazon.com/> |
+| Thu | - Create Integrations for Lambda functions (quiz-crud, room-management) <br>- Create routes: /quizzes, /quizzes/{proxy+}, /rooms, /rooms/{pin}, /rooms/{pin}/join | 04/06/2026   | 04/06/2026      | <https://docs.aws.amazon.com/> |
 | Fri | - **Hands-on:** <br>&emsp; + Attach Integrations to Routes <br>&emsp; + Attach Authorizer to protected routes <br>&emsp; + Test HTTP API with Postman <br>&emsp; + Verify endpoints work correctly | 05/06/2026   | 05/06/2026      
 
 

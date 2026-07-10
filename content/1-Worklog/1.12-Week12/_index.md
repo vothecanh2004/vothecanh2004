@@ -18,8 +18,8 @@ pre: " <b> 1.12. </b> "
 ### Tasks to be deployed this week:
 | Day | Task | Start Date | End Date | Reference Documentation |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Final integration testing of HTTP API, WebSocket API, Lambda, and EventBridge <br> - Test complete game flow end-to-end via APIs <br>- Verify synchronization of real-time features | 06/08/2026   | 06/08/2026      | <https://docs.aws.amazon.com/apigateway/> |
-| Tue | - Final API Gateway performance testing under load <br>- Verify WAF rules are working correctly <br>- Check logging and monitoring are fully operational | 07/08/2026   | 07/08/2026      | <https://docs.aws.amazon.com/waf/> |
+| Mon | - Final integration testing of HTTP API, WebSocket API, Lambda, and EventBridge <br> - Test complete game flow end-to-end via APIs <br>- Verify synchronization of real-time features | 06/08/2026   | 06/08/2026      | https://docs.aws.amazon.com/ |
+| Tue | - Final API Gateway performance testing under load <br>- Verify WAF rules are working correctly <br>- Check logging and monitoring are fully operational | 07/08/2026   | 07/08/2026      | https://docs.aws.amazon.com/ |
 | Wed | - Complete final documentation (API reference, architecture docs, maintenance guide) <br>- Prepare project handover package | 08/08/2026   | 08/08/2026      | |
 | Thu | - Team training on API usage and maintenance <br>- Demo API development best practices <br>- Q&A session | 09/08/2026   | 09/08/2026      | |
 | Fri | - Project sign-off and handover <br>- Save and archive all documentation | 10/08/2026   | 10/08/2026      

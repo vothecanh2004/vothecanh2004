@@ -18,11 +18,11 @@ pre: " <b> 1.4. </b> "
 ### Tasks to Deploy This Week:
 | Day | Task | Start Date | End Date | Resource Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ----------------------------------------- |
-| Mon | - Learn about Amazon Simple Storage Service (Amazon S3). | 11/05/2026 | 11/05/2026 | <https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html> |
-| Tue | - Learn about Amazon S3 Storage Classes and the specific use cases for each type. | 12/05/2026 | 12/05/2026 | <https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html> |
-| Wed | - Learn about Amazon Relational Database Service (Amazon RDS). <br> - Explore supported database engines such as MySQL, etc. | 13/05/2026 | 13/05/2026 | <https://docs.aws.amazon.com/rds/> |
-| Thu | - Learn about Amazon DynamoDB. <br> - Understand NoSQL databases. <br> - Compare the differences between Amazon RDS and Amazon DynamoDB. | 14/05/2026 | 14/05/2026 | <https://docs.aws.amazon.com/dynamodb/> |
-| Fri | - **Hands-on Lab:** <br>&emsp; + Create a Bucket on Amazon S3. <br>&emsp; + Configure Public and Private access permissions for Objects. <br>&emsp; + Launch a MySQL database instance on Amazon RDS. <br>&emsp; + Connect and verify the operational status of the RDS Instance. | 15/05/2026 | 15/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Mon | - Learn about Amazon Simple Storage Service (Amazon S3). | 11/05/2026 | 11/05/2026 | https://docs.aws.amazon.com/ |
+| Tue | - Learn about Amazon S3 Storage Classes and the specific use cases for each type. | 12/05/2026 | 12/05/2026 | https://docs.aws.amazon.com/ |
+| Wed | - Learn about Amazon Relational Database Service (Amazon RDS). <br> - Explore supported database engines such as MySQL, etc. | 13/05/2026 | 13/05/2026 | https://docs.aws.amazon.com/ |
+| Thu | - Learn about Amazon DynamoDB. <br> - Understand NoSQL databases. <br> - Compare the differences between Amazon RDS and Amazon DynamoDB. | 14/05/2026 | 14/05/2026 | https://docs.aws.amazon.com/ |
+| Fri | - **Hands-on Lab:** <br>&emsp; + Create a Bucket on Amazon S3. <br>&emsp; + Configure Public and Private access permissions for Objects. <br>&emsp; + Launch a MySQL database instance on Amazon RDS. <br>&emsp; + Connect and verify the operational status of the RDS Instance. | 15/05/2026 | 15/05/2026 | |
 
 
 ### Week 4 Key Achievements:

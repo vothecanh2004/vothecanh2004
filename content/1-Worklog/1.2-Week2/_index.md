@@ -16,11 +16,11 @@ pre: " <b> 1.2. </b> "
 ### Tasks to Deploy This Week:
 | Day | Task | Start Date | End Date | Resource Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ----------------------------------------- |
-| Mon | - Learn about AWS Identity and Access Management (IAM). <br> - Understand the role of IAM in identity management and authorization on AWS. | 27/04/2026 | 27/04/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html> |
-| Tue | - Learn about IAM Policies. <br>- Practice with sample IAM Policies. | 28/04/2026 | 28/04/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html> |
-| Wed | - Learn about IAM Roles. <br> - Understand the differences between an IAM User and an IAM Role. | 29/04/2026 | 29/04/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html?utm_source> |
-| Thu | - Learn about the Root Account and the security risks associated with using the Root User. | 30/04/2026 | 30/04/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html> |
-| Fri | - **Hands-on Lab:** <br>&emsp; + Create an IAM User. <br>&emsp; + Create an IAM Group. <br>&emsp; + Attach IAM Policies to the User/Group. <br>&emsp; + Verify and test the access permissions of the IAM User after authorization. | 01/05/2026 | 01/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Mon | - Learn about AWS Identity and Access Management (IAM). <br> - Understand the role of IAM in identity management and authorization on AWS. | 27/04/2026 | 27/04/2026 | https://docs.aws.amazon.com/ |
+| Tue | - Learn about IAM Policies. <br>- Practice with sample IAM Policies. | 28/04/2026 | 28/04/2026 | https://docs.aws.amazon.com/ |
+| Wed | - Learn about IAM Roles. <br> - Understand the differences between an IAM User and an IAM Role. | 29/04/2026 | 29/04/2026 | https://docs.aws.amazon.com/ |
+| Thu | - Learn about the Root Account and the security risks associated with using the Root User. | 30/04/2026 | 30/04/2026 | https://docs.aws.amazon.com/ |
+| Fri | - **Hands-on Lab:** <br>&emsp; + Create an IAM User. <br>&emsp; + Create an IAM Group. <br>&emsp; + Attach IAM Policies to the User/Group. <br>&emsp; + Verify and test the access permissions of the IAM User after authorization. | 01/05/2026 | 01/05/2026 | |
 
 ### Week 2 Key Achievements:
 

@@ -2,6 +2,7 @@
 title: "Lưu trữ Frontend với S3 & CloudFront"
 date: 2024-01-01
 weight: 10
+chapter: false
 pre: " <b> 5.10. </b> "
 ---
 

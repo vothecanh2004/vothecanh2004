@@ -19,11 +19,11 @@ pre: " <b> 1.4. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tìm hiểu dịch vụ Amazon Simple Storage Service (Amazon S3).                                                                                              | 11/05/2026   | 11/05/2026      |<https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html>
-| 3   | - Tìm hiểu các Storage Class của Amazon S3 và trường hợp sử dụng của từng loại.                                            | 12/05/2026    | 12/05/2026       | <https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html> |
-| 4   | - Tìm hiểu dịch vụ Amazon Relational Database Service (Amazon RDS). <br> - Tìm hiểu các hệ quản trị cơ sở dữ liệu được hỗ trợ như MySQL... | 13/05/2026    | 13/05/2026       | <https://docs.aws.amazon.com/rds/> |
-| 5   | - Tìm hiểu dịch vụ Amazon DynamoDB  <br> - Hiểu cơ sở dữ liệu NoSQL. <br> - So sánh sự khác nhau giữa Amazon RDS và Amazon DynamoDB                 | 14/05/2026   | 14/05/2026       | <https://docs.aws.amazon.com/dynamodb/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo Bucket trên Amazon S3. <br>&emsp; + Thiết lập quyền Public và Private cho Object. <br>&emsp; + Khởi tạo cơ sở dữ liệu MySQL trên Amazon RDS. <br>&emsp; + Kết nối và kiểm tra trạng thái hoạt động của RDS Instance.                                                                                      | 15/05/2026    | 15/05/2026       | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu dịch vụ Amazon Simple Storage Service (Amazon S3).                                                                                              | 11/05/2026   | 11/05/2026      |https://docs.aws.amazon.com/
+| 3   | - Tìm hiểu các Storage Class của Amazon S3 và trường hợp sử dụng của từng loại.                                            | 12/05/2026    | 12/05/2026       | https://docs.aws.amazon.com/|
+| 4   | - Tìm hiểu dịch vụ Amazon Relational Database Service (Amazon RDS). <br> - Tìm hiểu các hệ quản trị cơ sở dữ liệu được hỗ trợ như MySQL... | 13/05/2026    | 13/05/2026       | https://docs.aws.amazon.com/ |
+| 5   | - Tìm hiểu dịch vụ Amazon DynamoDB  <br> - Hiểu cơ sở dữ liệu NoSQL. <br> - So sánh sự khác nhau giữa Amazon RDS và Amazon DynamoDB                 | 14/05/2026   | 14/05/2026       | https://docs.aws.amazon.com/ |
+| 6   | - **Thực hành:** <br>&emsp; + Tạo Bucket trên Amazon S3. <br>&emsp; + Thiết lập quyền Public và Private cho Object. <br>&emsp; + Khởi tạo cơ sở dữ liệu MySQL trên Amazon RDS. <br>&emsp; + Kết nối và kiểm tra trạng thái hoạt động của RDS Instance.                                                                                      | 15/05/2026    | 15/05/2026       |  |
 
 
 ### Kết quả đạt được tuần 4:

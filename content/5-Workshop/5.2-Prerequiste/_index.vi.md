@@ -1,210 +1,75 @@
 ---
-title : "Các bước chuẩn bị"
-date : 2024-01-01 
-weight : 2
-chapter : false
-pre : " <b> 5.2. </b> "
+title: "Xác thực Cognito"
+date: 2024-01-01
+weight: 3
+pre: " <b> 5.3. </b> "
 ---
 
-### Các bước chuẩn bị (Prerequisites)
+# Thiết lập Xác thực Cognito
 
-Để hoàn thành bài thực hành workshop xây dựng ứng dụng trắc nghiệm trực tuyến **WebQuiz**, bạn cần chuẩn bị môi trường phát triển cục bộ và phân quyền tài khoản AWS tương ứng.
+Trong bước này, bạn sẽ cấu hình **Amazon Cognito** để quản lý việc đăng ký người dùng, xác thực và bảo mật các access token cho người dùng đóng vai trò host. Chúng ta sẽ sử dụng giao diện điều khiển Cognito mới tập trung vào ứng dụng (application-centric).
 
----
+### 1. Tạo Amazon Cognito User Pool cho Ứng dụng Web (SPA)
 
-#### 1. Quyền hạn IAM (IAM Permissions)
-
-Bạn cần sử dụng một tài khoản IAM User hoặc IAM Role có các quyền hạn để dọn dẹp và vận hành các tài nguyên trong workshop. 
-
-{{% notice note %}}
-Để thực hành lab cá nhân một cách thuận tiện nhất và tránh lỗi phân quyền (Access Denied), chúng tôi khuyên bạn nên sử dụng quyền **AdministratorAccess** cho tài khoản thực hành của mình.
-{{% /notice %}}
-
-Nếu bạn muốn cấu hình chính sách phân quyền tối thiểu (Least Privilege), hãy làm theo các bước sau để tạo IAM Policy trên AWS Console:
-
-1. Đăng nhập vào **AWS Management Console** và tìm kiếm dịch vụ **IAM**.
-2. Chọn **Policies** ở thanh điều hướng bên trái và nhấn **Create policy**.
-3. Tại giao diện tạo policy, chuyển sang trình chỉnh sửa **JSON** (JSON editor), xóa hết mã mẫu cũ và dán đoạn chính sách JSON dưới đây vào:
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "DynamoDBCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "dynamodb:DeleteTable",
-        "dynamodb:DescribeTable",
-        "dynamodb:ListTables"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "CognitoCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "cognito-idp:DeleteUserPool",
-        "cognito-idp:DescribeUserPool",
-        "cognito-idp:DeleteUserPoolClient"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "S3Cleanup",
-      "Effect": "Allow",
-      "Action": [
-        "s3:DeleteBucket",
-        "s3:DeleteObject",
-        "s3:DeleteObjectVersion",
-        "s3:ListBucket",
-        "s3:ListBucketVersions",
-        "s3:GetBucketLocation"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "APIGatewayCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "apigateway:DELETE",
-        "apigateway:GET"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "CloudFrontCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "cloudfront:DeleteDistribution",
-        "cloudfront:GetDistribution",
-        "cloudfront:UpdateDistribution"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "LambdaCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "lambda:DeleteFunction",
-        "lambda:GetFunction",
-        "lambda:RemovePermission"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "EventBridgeCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "events:DeleteEventBus",
-        "events:DeleteRule",
-        "events:RemoveTargets",
-        "events:DescribeRule",
-        "events:DescribeEventBus"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "CloudWatchCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "cloudwatch:DeleteAlarms",
-        "cloudwatch:DescribeAlarms",
-        "logs:DeleteLogGroup",
-        "logs:DescribeLogGroups"
-      ],
-      "Resource": "*"
-    },
-    {
-      "Sid": "IAMCleanup",
-      "Effect": "Allow",
-      "Action": [
-        "iam:DeleteRole",
-        "iam:DeleteRolePolicy",
-        "iam:DetachRolePolicy",
-        "iam:ListRolePolicies",
-        "iam:ListAttachedRolePolicies",
-        "iam:GetRole"
-      ],
-      "Resource": "*"
-    }
-  ]
-}
-```
-
-5. Nhấn **Next**.
-6. Nhập tên cho chính sách (ví dụ: `WebQuizCleanupPolicy`), thêm mô tả tùy chọn, và nhấn **Create policy**.
-7. Tiến hành gán chính sách này vào **IAM User** của bạn (truy cập menu **Users** -> chọn User của bạn -> **Add permissions** -> **Attach policies directly** và chọn chính sách `WebQuizCleanupPolicy` vừa tạo).
+1. Mở **[Amazon Cognito console](https://console.aws.amazon.com/cognito/)**.
+![Image 1](/images/5-Workshop/5.3/5.3.1.png)
+2. Nhấp chọn **Create user pool**.
+![Image 2](/images/5-Workshop/5.3/5.3.2.png)
+3. **Bước 1 - Định nghĩa ứng dụng của bạn (Define your application):**
+   * **Application type:** Chọn **Single-page application (SPA)**.
+   * Nhấp chọn **Next**.
+![Image 3](/images/5-Workshop/5.3/5.3.3.png)
+4. **Bước 2 - Đặt tên cho ứng dụng (Name your application):**
+   * **Application name:** Nhập `webquiz-dev-web-client`.
+   * Nhấp chọn **Next**.
+![Image 4](/images/5-Workshop/5.3/5.3.4.png)
+5. **Bước 3 - Cấu hình các tùy chọn (Configure options):**
+   * **Options for sign-in identifiers:** Tích chọn ✅ **Email**.
+   * **Required attributes for sign-up:** `email` (mặc định).
+   * Nhấp chọn **Next**.
+![Image 5](/images/5-Workshop/5.3/5.3.5.png)
+6. **Bước 4 - Thêm URL phản hồi (Add a return URL):**
+   * **Return URL:** Nhập `http://localhost:3000/callback` (bạn sẽ sử dụng URL này để tích hợp với frontend ở môi trường local).
+   * Nhấp chọn **Next**.
+![Image 6](/images/5-Workshop/5.3/5.3.6.png)
+7. **Bước 5 - Xem lại và tạo (Review and create):**
+   * Kiểm tra lại toàn bộ thông tin cấu hình.
+   * Nhấp chọn **Create your application**.
+8. **Bước 6 - Thiết lập ứng dụng của bạn (Set up your application):**
+   * Cognito sẽ hiển thị các ví dụ về tích hợp mã nguồn (code).
+   * Nhấp chọn **Go to overview** để đi đến trang tổng quan User Pool của bạn.
 
 ---
 
-#### 2. Cài đặt môi trường phát triển cục bộ (Local Workspace Setup)
+### 2. Cấu hình các Thiết lập bổ sung cho User Pool
 
-Hãy đảm bảo máy trạm của bạn đã được cài đặt sẵn các công cụ sau:
+Sau khi User Pool được tạo, bạn phải cấu hình các chính sách bảo mật:
 
-##### A. AWS CLI
-*   Cài đặt AWS CLI và cấu hình tài khoản IAM của bạn bằng lệnh:
-    ```bash
-    aws configure
-    ```
-    Hãy đảm bảo khai báo Region mặc định (ví dụ: `ap-southeast-1`).
-
-##### B. Node.js & npm
-*   Mã nguồn WebQuiz backend (Lambda) và frontend được viết bằng Node.js. Bạn cần cài đặt Node.js phiên bản **18.x** hoặc **20.x** (LTS).
-*   Kiểm tra cài đặt:
-    ```bash
-    node -v
-    npm -v
-    ```
-
-##### C. Git & wscat
-*   Sử dụng Git để tải mã nguồn dự án. Cài đặt thêm `wscat` để test WebSocket API.
-    ```bash
-    git --version
-    npm install -g wscat
-    ```
+1. Trong trang chi tiết User Pool của bạn, chọn tab **Authentication methods**:
+   * Xác minh cấu hình **Password policy** (Chính sách mật khẩu):
+     * Độ dài tối thiểu (Minimum length): `8` ký tự.
+     * Tích chọn ✅ **Requires numbers** (Yêu cầu chữ số).
+     * Tích chọn ✅ **Requires lowercase** (Yêu cầu chữ thường).
+     * Tích chọn ✅ **Requires uppercase** (Yêu cầu chữ hoa).
+     * Bỏ tích ☐ **Requires symbols** (Yêu cầu ký tự đặc biệt - hoặc giữ tích chọn nếu bạn muốn).
+2. Chọn tab **Sign-up**:
+   * **Self-service sign-up:** Tích chọn ✅ **Enabled** (để cho phép người dùng tự đăng ký tài khoản).
+   * **Cognito-assisted verification:** Tích chọn ✅ **Enabled**.
+   * **Verification method:** Chọn **Send email message** (Gửi tin nhắn email).
+3. Chọn tab **App clients**:
+   * Nhấp vào client có tên là `webquiz-dev-web-client`.
+   * Xác minh **Client secret** được đặt thành **No client secret** (vì đây là public client dành cho SPA).
+   * Xác minh **Authentication flows** (Luồng xác thực) có:
+     * ✅ `ALLOW_USER_SRP_AUTH`
+     * ✅ `ALLOW_REFRESH_TOKEN_AUTH`
 
 ---
 
-#### 3. Tải mã nguồn dự án (Project Source Code)
+### 3. Lưu lại thông tin chi tiết của Cognito
 
-Mã nguồn của ứng dụng WebQuiz được chia làm 2 thư mục chính:
-1.  **webquiz-frontend/**: Giao diện React tĩnh hiển thị bộ câu hỏi, phòng chờ và giao diện chơi thời gian thực.
-2.  **webquiz-backend/** (Backend Lambda): Mã nguồn Node.js cho các hàm Lambda xử lý nghiệp vụ REST API (tạo phòng, tham gia), WebSocket (giao tiếp thời gian thực), và EventBridge (tính điểm, lưu kết quả).
+Hãy đảm bảo bạn đã sao chép và lưu lại các thông tin xác thực sau từ trang **User Pool Overview**:
+*   **User Pool ID:** `ap-southeast-1_xxxxxxxxx`
+*   **App Client ID** (tìm thấy trong tab App Clients): `xxxxxxxxxxxxxxxxxxxxxxxxxx`
 
-Hãy clone dự án từ repository workshop của bạn (thay thế URL bằng link repo thực tế của bạn nếu có):
-```bash
-git clone https://github.com/USER/webquiz-workshop.git
-cd webquiz-workshop
-```
-
----
-
-#### 4. Lựa chọn Phương thức Triển khai Hạ tầng
-
-Trong workshop này, bạn có thể lựa chọn 1 trong 2 phương thức sau để xây dựng hệ thống:
-
-*   **Lựa chọn A (Khuyên dùng - Nhanh chóng): Triển khai tự động bằng AWS CloudFormation**
-    *   Hạ tầng sẽ được khởi tạo hoàn toàn tự động.
-    *   Các chương tiếp theo sẽ đóng vai trò là hướng dẫn để bạn **Kiểm tra và Xác thực** cấu hình tài nguyên đã được tạo thay vì phải tự tạo lại.
-*   **Lựa chọn B: Tự tay cấu hình thủ công từng bước (Manual)**
-    *   Bạn sẽ **bỏ qua** bước 4 (chạy CloudFormation) dưới đây.
-    *   Bắt đầu từ chương tiếp theo, bạn sẽ tự tay làm theo từng bước hướng dẫn trên AWS Console để tự xây dựng kiến trúc Serverless từ con số 0.
-
----
-
-#### Hướng dẫn cho Lựa chọn A: Triển khai tự động bằng CloudFormation
-
-Để chuẩn bị nhanh môi trường làm workshop, chúng ta có thể deploy CloudFormation template (đây là template mẫu tự động tạo tài nguyên).
-
-{{% notice info %}}
-**Lưu ý về phạm vi triển khai**: 
-Nếu chọn triển khai tự động bằng CloudFormation, kiến trúc cơ bản như DynamoDB, Cognito, S3, CloudFront, Lambda, API Gateway và EventBridge sẽ được thiết lập tự động. Bạn có thể **bỏ qua bước tạo thủ công** và chỉ cần tập trung vào việc **xác minh cấu hình**, cập nhật biến môi trường, tải mã nguồn Frontend lên S3 và kiểm thử hệ thống.
-{{% /notice %}}
-
-1. Trình duyệt sẽ mở bảng điều khiển CloudFormation Console và tự động điền sẵn các cấu hình (sử dụng file `architecture.yaml` đi kèm).
-2. Tại màn hình **Specify stack details**, kiểm tra các tham số rồi click **Next**.
-3. Cuộn xuống cuối trang Review, tích chọn **I acknowledge that AWS CloudFormation might create IAM resources with custom names.** và click **Submit** để bắt đầu triển khai.
-4. Đợi cho đến khi quá trình khởi tạo hoàn tất (Trạng thái chuyển sang `CREATE_COMPLETE`).
-
-Sau khi CloudFormation Stack triển khai thành công, phần lớn hệ thống backend của bạn đã sẵn sàng! Ở các bài thực hành tiếp theo, bạn sẽ tiến hành cấu hình Frontend, tải code tĩnh lên S3, và thực hiện kiểm thử sự kết nối luồng chơi game theo thời gian thực (Realtime WebSocket) và kiến trúc sự kiện (EventBridge).
+> [!IMPORTANT]
+> Bạn sẽ cần hai giá trị này khi cấu hình authorizer cho API Gateway và các biến môi trường cho ứng dụng frontend ở local sau này.

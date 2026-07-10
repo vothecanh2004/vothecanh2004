@@ -17,11 +17,11 @@ pre: " <b> 1.5. </b> "
 ### Tasks to Deploy This Week:
 | Day | Task | Start Date | End Date | Resource Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ----------------------------------------- |
-| Mon | - Learn about Amazon Virtual Private Cloud (Amazon VPC). <br> - Understand how AWS structures networks and isolates resources within a VPC. | 18/05/2026 | 18/05/2026 | <https://docs.aws.amazon.com/vpc/> |
-| Tue | - Learn about Internet Gateways. <br> - Learn about NAT Gateways. <br> - Understand how Public and Private Subnets connect to the Internet using Internet Gateways and NAT Gateways. | 19/05/2026 | 19/05/2026 | <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html> |
-| Wed | - Learn about Amazon CloudWatch. <br> - Understand how CloudWatch monitors AWS resources and triggers alarms when thresholds are exceeded. | 20/05/2026 | 20/05/2026 | <https://docs.aws.amazon.com/cloudwatch/> |
-| Thu | - Learn about AWS CloudTrail. <br> - Understand how CloudTrail records user actions and API calls made within the AWS account for auditing and security purposes. | 21/05/2026 | 21/05/2026 | <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html> |
-| Fri | - **Comprehensive Review of All Learned Knowledge:** <br>&emsp; + IAM. <br>&emsp; + Amazon EC2. <br>&emsp; + Amazon S3. <br>&emsp; + Amazon RDS. <br>&emsp; + Amazon DynamoDB. <br>&emsp; + Amazon VPC. <br>&emsp; + Amazon CloudWatch. | 22/05/2026 | 22/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Mon | - Learn about Amazon Virtual Private Cloud (Amazon VPC). <br> - Understand how AWS structures networks and isolates resources within a VPC. | 18/05/2026 | 18/05/2026 | https://docs.aws.amazon.com/ |
+| Tue | - Learn about Internet Gateways. <br> - Learn about NAT Gateways. <br> - Understand how Public and Private Subnets connect to the Internet using Internet Gateways and NAT Gateways. | 19/05/2026 | 19/05/2026 | https://docs.aws.amazon.com/ |
+| Wed | - Learn about Amazon CloudWatch. <br> - Understand how CloudWatch monitors AWS resources and triggers alarms when thresholds are exceeded. | 20/05/2026 | 20/05/2026 | https://docs.aws.amazon.com/ |
+| Thu | - Learn about AWS CloudTrail. <br> - Understand how CloudTrail records user actions and API calls made within the AWS account for auditing and security purposes. | 21/05/2026 | 21/05/2026 | https://docs.aws.amazon.com/ |
+| Fri | - **Comprehensive Review of All Learned Knowledge:** <br>&emsp; + IAM. <br>&emsp; + Amazon EC2. <br>&emsp; + Amazon S3. <br>&emsp; + Amazon RDS. <br>&emsp; + Amazon DynamoDB. <br>&emsp; + Amazon VPC. <br>&emsp; + Amazon CloudWatch. | 22/05/2026 | 22/05/2026 | |
 
 
 ### Week 5 Key Achievements:

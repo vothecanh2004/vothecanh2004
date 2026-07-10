@@ -17,10 +17,10 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be deployed this week:
 | Day | Task | Start Date | End Date | Reference Documentation |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Research and design API architecture (HTTP REST and WebSocket) <br> - Identify required endpoints for the Quiz system <br>- Learn how API Gateway works with Lambda | 25/05/2026   | 25/05/2026      | <https://docs.aws.amazon.com/apigateway/> |
-| Tue | - Design request/response structure for APIs <br>- Draw data flow diagram through API Gateway <br>- Prepare route specifications | 26/05/2026   | 26/05/2026      | <https://swagger.io/> |
-| Wed | - Create Postman Workspace <br>- Set up Postman Environment variables <br>- Create Collection folder structure for APIs | 27/05/2026   | 27/05/2026      | <https://www.postman.com/> |
-| Thu | - Learn about HTTP API on API Gateway <br>- Learn about WebSocket API on API Gateway <br>- Learn how to configure CORS for API Gateway | 28/05/2026   | 28/05/2026      | <https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html> |
+| Mon | - Research and design API architecture (HTTP REST and WebSocket) <br> - Identify required endpoints for the Quiz system <br>- Learn how API Gateway works with Lambda | 25/05/2026   | 25/05/2026      | https://docs.aws.amazon.com/ |
+| Tue | - Design request/response structure for APIs <br>- Draw data flow diagram through API Gateway <br>- Prepare route specifications | 26/05/2026   | 26/05/2026      | |
+| Wed | - Create Postman Workspace <br>- Set up Postman Environment variables <br>- Create Collection folder structure for APIs | 27/05/2026   | 27/05/2026      | |
+| Thu | - Learn about HTTP API on API Gateway <br>- Learn about WebSocket API on API Gateway <br>- Learn how to configure CORS for API Gateway | 28/05/2026   | 28/05/2026      | https://docs.aws.amazon.com/ |
 | Fri | - **Hands-on:** <br>&emsp; + Create a simple HTTP API on API Gateway <br>&emsp; + Test API with Postman <br>&emsp; + Practice connecting API Gateway to a sample Lambda function | 29/05/2026   | 29/05/2026      
 
 

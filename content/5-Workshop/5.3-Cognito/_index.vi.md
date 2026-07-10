@@ -2,6 +2,7 @@
 title: "Xác thực Cognito"
 date: 2024-01-01
 weight: 3
+chapter: false
 pre: " <b> 5.3. </b> "
 ---
 
@@ -12,70 +13,33 @@ Trong bước này, bạn sẽ cấu hình dịch vụ **Amazon Cognito** để 
 ### 1. Tạo Amazon Cognito User Pool cho ứng dụng Web (SPA)
 
 1. Mở **[Amazon Cognito console](https://console.aws.amazon.com/cognito/)**.
-![Ảnh 1](/images/5-Workshop/5-3-1.jpg)
+![Ảnh 1](/images/5-Workshop/5.3/5.3.1.png)
+
 2. Nhấn **Create user pool**.
-![Ảnh 2](/images/5-Workshop/5-3-2.jpg)
+![Ảnh 2](/images/5-Workshop/5.3/5.3.2.png)
 3. **Step 1 - Define your application:**
    * **Application type:** Chọn **Single-page application (SPA)**.
    * Nhấn **Next**.
-![Ảnh 3](/images/5-Workshop/5-3-3.jpg)
+![Ảnh 3](/images/5-Workshop/5.3/5.3.3.png)
 4. **Step 2 - Name your application:**
    * **Application name:** Nhập `webquiz-dev-web-client`.
    * Nhấn **Next**.
-![Ảnh 4](/images/5-Workshop/5-3-4.jpg)
+![Ảnh 4](/images/5-Workshop/5.3/5.3.4.png)
 5. **Step 3 - Configure options:**
    * **Options for sign-in identifiers:** Tick chọn ✅ **Email**.
    * **Required attributes for sign-up:** Mặc định là `email`.
    * Nhấn **Next**.
-![Ảnh 5](/images/5-Workshop/5-3-5.jpg)
+![Ảnh 5](/images/5-Workshop/5.3/5.3.5.png)
 6. **Step 4 - Add a return URL:**
    * **Return URL:** Nhập `http://localhost:3000/callback` (sẽ dùng để kiểm thử ứng dụng chạy frontend ở local).
    * Nhấn **Next**.
-![Ảnh 6](/images/5-Workshop/5-3-6.jpg)
+![Ảnh 6](/images/5-Workshop/5.3/5.3.6.png)
 7. **Step 5 - Review and create:**
    * Kiểm tra kỹ lại toàn bộ cấu hình.
    * Nhấn **Create your application**.
 8. **Step 6 - Set up your application:**
    * Giao diện sẽ hiển thị ví dụ mẫu tích hợp code.
    * Nhấn **Go to overview** để quay lại trang tổng quan User Pool.
-1. **Mở Amazon Cognito Console**
-   * Truy cập Amazon Cognito User Pools: [https://console.aws.amazon.com/cognito/v2/idp/user-pools](https://console.aws.amazon.com/cognito/v2/idp/user-pools)
-   * Nhấn **Create user pool** hoặc **Get started for free in less than five minutes**.
-
-2. **Define your application**
-   * Tại màn hình Define your application:
-   * **Application type:** Chọn **Single-page application (SPA)**
-   * Nhấn **Next**.
-
-3. **Name your application**
-   * Nhập thông tin:
-   * **Application name:** `webquiz-dev-web-client`
-   * Nhấn **Next**.
-
-4. **Configure options**
-   * Thiết lập các tùy chọn đăng nhập:
-   * **Options for sign-in identifiers:** Chọn **Email**
-   * **Required attributes for sign-up:** Giữ mặc định là `email`
-   * Nhấn **Next**.
-
-5. **Add a return URL**
-   * Nhập Callback URL của ứng dụng: `http://localhost:3000/callback` *(Nếu triển khai lên môi trường Production, hãy thay bằng URL thực tế của ứng dụng)*.
-   * Nhấn **Next**.
-
-6. **Review and create**
-   * Kiểm tra lại các thiết lập:
-     * **Application type:** Single-page application (SPA)
-     * **Application name:** `webquiz-dev-web-client`
-     * **Sign-in identifier:** Email
-     * **Callback URL:** `http://localhost:3000/callback`
-   * Sau đó nhấn **Create your application**.
-
-7. **Set up your application**
-   * Sau khi tạo thành công, Amazon Cognito sẽ tự động tạo:
-     * User Pool
-     * App Client (Public Client dành cho SPA)
-   * Trang Set up your application sẽ hiển thị các đoạn mã mẫu (Quick setup guide) để tích hợp với ứng dụng.
-   * Nếu chưa cần tích hợp ngay, chọn **Go to overview** để chuyển đến trang quản lý User Pool.
 
 ---
 

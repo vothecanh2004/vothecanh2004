@@ -19,11 +19,11 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tìm hiểu dịch vụ AWS Identity and Access Management (IAM). <br> - Hiểu vai trò của IAM trong việc quản lý danh tính và phân quyền trên AWS.                                                                                             | 27/04/2026   | 27/04/2026    |<https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html>
-| 3   | - Tìm hiểu IAM Policy <br>- Thực hành một số IAM Policy mẫu. <br>                                            | 28/04/2026   | 28/04/2026      | <https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html> |
-| 4   | - Tìm hiểu IAM Role. <br> - Hiểu sự khác nhau giữa IAM User và IAM Role <br>  | 29/04/2026   | 29/04/2026      | <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html?utm_source> |
-| 5   | - Tìm hiểu Root Account và các rủi ro bảo mật khi sử dụng Root User.   <br>                  | 30/04/2026   | 30/04/2026      | <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo IAM User <br>&emsp; + Tạo IAM Group. <br>&emsp; + Gán IAM Policy cho User/Group <br>&emsp; + Kiểm tra quyền truy cập của IAM User sau khi được phân quyền.                                                                                       | 01/05/2026   | 01/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu dịch vụ AWS Identity and Access Management (IAM). <br> - Hiểu vai trò của IAM trong việc quản lý danh tính và phân quyền trên AWS.                                                                                             | 27/04/2026   | 27/04/2026    |<https://docs.aws.amazon.com/>|
+| 3   | - Tìm hiểu IAM Policy <br>- Thực hành một số IAM Policy mẫu. <br>                                            | 28/04/2026   | 28/04/2026      | https://docs.aws.amazon.com/ |
+| 4   | - Tìm hiểu IAM Role. <br> - Hiểu sự khác nhau giữa IAM User và IAM Role <br>  | 29/04/2026   | 29/04/2026      | https://docs.aws.amazon.com/ |
+| 5   | - Tìm hiểu Root Account và các rủi ro bảo mật khi sử dụng Root User.   <br>                  | 30/04/2026   | 30/04/2026      | https://docs.aws.amazon.com/ |
+| 6   | - **Thực hành:** <br>&emsp; + Tạo IAM User <br>&emsp; + Tạo IAM Group. <br>&emsp; + Gán IAM Policy cho User/Group <br>&emsp; + Kiểm tra quyền truy cập của IAM User sau khi được phân quyền.                                                                                       | 01/05/2026   | 01/05/2026      |  |
 
 
 

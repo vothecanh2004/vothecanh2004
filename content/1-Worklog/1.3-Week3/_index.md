@@ -17,11 +17,11 @@ pre: " <b> 1.3. </b> "
 ### Tasks to Deploy This Week:
 | Day | Task | Start Date | End Date | Resource Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ----------------------------------------- |
-| Mon | - Learn about Amazon EC2. <br> - Learn about EC2 Instances. <br> - Differentiate between various Instance Types. | 04/05/2026 | 04/05/2026 | <https://aws.amazon.com/vi/documentation-overview/ec2/> |
-| Tue | - Learn about the EC2 Instance launch process. <br> - Practice the steps to Launch an EC2 Instance. | 05/05/2026 | 05/05/2026 | <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-launch-parameters.html> |
-| Wed | - Learn about Security Groups. <br> - Understand how a Security Group functions as a firewall for an EC2 Instance. | 06/05/2026 | 06/05/2026 | <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html> |
-| Thu | - Learn about Amazon Machine Images (AMI). <br> - Learn about Amazon Elastic Block Store (EBS). | 07/05/2026 | 07/05/2026 | <https://aws.amazon.com/vi/documentation-overview/ec2/> |
-| Fri | - **Hands-on Lab:** <br>&emsp; Practice with EC2 and observe EC2 state changes within the AWS Management Console. | 08/05/2026 | 08/05/2026 | <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-launch-parameters.html> |
+| Mon | - Learn about Amazon EC2. <br> - Learn about EC2 Instances. <br> - Differentiate between various Instance Types. | 04/05/2026 | 04/05/2026 | https://aws.amazon.com/ |
+| Tue | - Learn about the EC2 Instance launch process. <br> - Practice the steps to Launch an EC2 Instance. | 05/05/2026 | 05/05/2026 | https://docs.aws.amazon.com/ |
+| Wed | - Learn about Security Groups. <br> - Understand how a Security Group functions as a firewall for an EC2 Instance. | 06/05/2026 | 06/05/2026 | https://docs.aws.amazon.com/ |
+| Thu | - Learn about Amazon Machine Images (AMI). <br> - Learn about Amazon Elastic Block Store (EBS). | 07/05/2026 | 07/05/2026 | https://aws.amazon.com/ |
+| Fri | - **Hands-on Lab:** <br>&emsp; Practice with EC2 and observe EC2 state changes within the AWS Management Console. | 08/05/2026 | 08/05/2026 | https://docs.aws.amazon.com/ |
 
 
 ### Week 3 Key Achievements:
