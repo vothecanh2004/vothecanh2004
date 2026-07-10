@@ -9,7 +9,7 @@ pre: " <b> 5.3. </b> "
 
 Trong bước này, bạn sẽ cấu hình dịch vụ **Amazon Cognito** để quản lý việc đăng ký, đăng nhập và cấp quyền bảo mật cho người dùng quản trò (host). Chúng ta sẽ thao tác trên giao diện Console mới tập trung vào ứng dụng (application-centric) của Cognito.
 
-### 1. Tạo User Pool (Giao diện console AWS mới nhất)
+### 1. Tạo Amazon Cognito User Pool cho ứng dụng Web (SPA)
 
 1. Mở **[Amazon Cognito console](https://console.aws.amazon.com/cognito/)**.
 ![Ảnh 1](/images/5-Workshop/5-3-1.jpg)
@@ -38,6 +38,44 @@ Trong bước này, bạn sẽ cấu hình dịch vụ **Amazon Cognito** để 
 8. **Step 6 - Set up your application:**
    * Giao diện sẽ hiển thị ví dụ mẫu tích hợp code.
    * Nhấn **Go to overview** để quay lại trang tổng quan User Pool.
+1. **Mở Amazon Cognito Console**
+   * Truy cập Amazon Cognito User Pools: [https://console.aws.amazon.com/cognito/v2/idp/user-pools](https://console.aws.amazon.com/cognito/v2/idp/user-pools)
+   * Nhấn **Create user pool** hoặc **Get started for free in less than five minutes**.
+
+2. **Define your application**
+   * Tại màn hình Define your application:
+   * **Application type:** Chọn **Single-page application (SPA)**
+   * Nhấn **Next**.
+
+3. **Name your application**
+   * Nhập thông tin:
+   * **Application name:** `webquiz-dev-web-client`
+   * Nhấn **Next**.
+
+4. **Configure options**
+   * Thiết lập các tùy chọn đăng nhập:
+   * **Options for sign-in identifiers:** Chọn **Email**
+   * **Required attributes for sign-up:** Giữ mặc định là `email`
+   * Nhấn **Next**.
+
+5. **Add a return URL**
+   * Nhập Callback URL của ứng dụng: `http://localhost:3000/callback` *(Nếu triển khai lên môi trường Production, hãy thay bằng URL thực tế của ứng dụng)*.
+   * Nhấn **Next**.
+
+6. **Review and create**
+   * Kiểm tra lại các thiết lập:
+     * **Application type:** Single-page application (SPA)
+     * **Application name:** `webquiz-dev-web-client`
+     * **Sign-in identifier:** Email
+     * **Callback URL:** `http://localhost:3000/callback`
+   * Sau đó nhấn **Create your application**.
+
+7. **Set up your application**
+   * Sau khi tạo thành công, Amazon Cognito sẽ tự động tạo:
+     * User Pool
+     * App Client (Public Client dành cho SPA)
+   * Trang Set up your application sẽ hiển thị các đoạn mã mẫu (Quick setup guide) để tích hợp với ứng dụng.
+   * Nếu chưa cần tích hợp ngay, chọn **Go to overview** để chuyển đến trang quản lý User Pool.
 
 ---
 
@@ -68,7 +106,7 @@ Sau khi tạo xong User Pool, cần đảm bảo các cấu hình bảo mật đ
 ### 3. Lưu lại thông tin cấu hình
 
 Vui lòng sao chép và lưu trữ hai thông số quan trọng sau từ trang tổng quan:
-*   **User Pool ID:** `us-east-1_xxxxxxxxx`
+*   **User Pool ID:** `ap-southeast-1_xxxxxxxxx`
 *   **App Client ID** (tìm thấy trong tab App clients): `xxxxxxxxxxxxxxxxxxxxxxxxxx`
 
 > [!IMPORTANT]

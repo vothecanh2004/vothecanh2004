@@ -48,7 +48,7 @@ Mở **Postman** (hoặc dùng `curl`) để gửi request tạo bộ câu hỏi
 
 1. **Thông tin Request:**
    * **Phương thức:** `POST`
-   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.us-east-1.amazonaws.com/dev/quizzes`
+   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev/quizzes`
    * **Headers:**
      * `Authorization`: `Bearer YOUR_ID_TOKEN`
      * `Content-Type`: `application/json`
@@ -70,7 +70,7 @@ Khởi tạo một game show trực tiếp:
 
 1. **Thông tin Request:**
    * **Phương thức:** `POST`
-   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.us-east-1.amazonaws.com/dev/rooms`
+   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev/rooms`
    * **Headers:**
      * `Authorization`: `Bearer YOUR_ID_TOKEN`
    * **Body (JSON):**
@@ -87,7 +87,7 @@ Khởi tạo một game show trực tiếp:
 
 1. **Thông tin Request:**
    * **Phương thức:** `POST`
-   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.us-east-1.amazonaws.com/dev/rooms/582914/join` (thay `582914` bằng mã PIN phòng thực tế vừa tạo).
+   * **URL:** `https://YOUR_HTTP_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev/rooms/582914/join` (thay `582914` bằng mã PIN phòng thực tế vừa tạo).
    * **Headers:**
      * `Content-Type`: `application/json`
    * **Body (JSON):**
@@ -107,13 +107,13 @@ Tiếp theo, mở hai cửa sổ terminal để mô phỏng tương tác giữa 
 #### 5.1 Kết nối phía Quản trò (Terminal 1)
 Mở terminal và kết nối với vai trò host:
 ```bash
-wscat -c "wss://YOUR_WS_API_ID.execute-api.us-east-1.amazonaws.com/dev?roomPin=582914&role=host"
+wscat -c "wss://YOUR_WS_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev?roomPin=582914&role=host"
 ```
 
 #### 5.2 Kết nối phía Người chơi (Terminal 2)
 Mở cửa sổ terminal khác và kết nối với vai trò người chơi (Alice):
 ```bash
-wscat -c "wss://YOUR_WS_API_ID.execute-api.us-east-1.amazonaws.com/dev?roomPin=582914&orderId=YOUR_PLAYER_ORDER_ID&role=player"
+wscat -c "wss://YOUR_WS_API_ID.execute-api.ap-southeast-1.amazonaws.com/dev?roomPin=582914&orderId=YOUR_PLAYER_ORDER_ID&role=player"
 ```
 
 ---

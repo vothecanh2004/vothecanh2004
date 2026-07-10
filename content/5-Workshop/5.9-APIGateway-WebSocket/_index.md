@@ -75,12 +75,12 @@ Go to the **Stages** tab on the left and select stage **`dev`**. Record the two 
 
 *   **WebSocket URL:**
     ```
-    wss://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev
+    wss://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev
     ```
     *(Used by the frontend React application to connect).*
 *   **Connections URL:**
     ```
-    https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev
+    https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev
     ```
     *(Used by backend Lambda functions to push real-time broadcasts).*
 
@@ -94,12 +94,12 @@ Now that the WebSocket API is deployed, you must update the environment variable
 2. Update the **`webquiz-dev-ws-message`** function:
    * Open the function details → **Configuration** tab → **Environment variables**.
    * Click **Edit** and set:
-     * `WEBSOCKET_ENDPOINT` = `https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev` (the **Connections URL** with `https://` prefix, **not** `wss://`).
+     * `WEBSOCKET_ENDPOINT` = `https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev` (the **Connections URL** with `https://` prefix, **not** `wss://`).
    * Click **Save**.
 ![Image 7](/images/5-Workshop/5.9/5.9.7.png)
 3. Update the **`webquiz-dev-score-calculator`** function:
    * Open the function details → **Configuration** tab → **Environment variables**.
    * Click **Edit** and set:
-     * `WEBSOCKET_ENDPOINT` = `https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev`
+     * `WEBSOCKET_ENDPOINT` = `https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev`
    * Click **Save**.
 ![Image 8](/images/5-Workshop/5.9/5.9.8.png)

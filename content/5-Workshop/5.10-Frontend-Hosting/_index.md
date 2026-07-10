@@ -104,10 +104,10 @@ To ensure client-side routing works correctly without throwing `403 Access Denie
 2. Configure your environment file (e.g., `.env` or `config.js`) with the AWS values you saved:
    ```javascript
    const config = {
-       COGNITO_USER_POOL_ID: "us-east-1_xxxxxxxxx",
+       COGNITO_USER_POOL_ID: "ap-southeast-1_xxxxxxxxx",
        COGNITO_APP_CLIENT_ID: "xxxxxxxxxxxxxxxxxxxxxxxxxx",
-       REST_API_ENDPOINT: "https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev",
-       WEBSOCKET_API_ENDPOINT: "wss://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev"
+       REST_API_ENDPOINT: "https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev",
+       WEBSOCKET_API_ENDPOINT: "wss://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev"
    };
    ```
 3. Build the application static assets:

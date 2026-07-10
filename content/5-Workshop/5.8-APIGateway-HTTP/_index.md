@@ -65,7 +65,7 @@ To allow frontend requests from different domains or local hosts:
    * **Authorizer type:** Select **JWT**.
    * **Name:** Enter `CognitoAuthorizer`.
    * **Identity source:** Enter `$request.header.Authorization`.
-   * **Issuer URL:** Enter `https://cognito-idp.us-east-1.amazonaws.com/YOUR_USER_POOL_ID` (replace `YOUR_USER_POOL_ID` with the actual User Pool ID from Step 3).
+   * **Issuer URL:** Enter `https://cognito-idp.ap-southeast-1.amazonaws.com/YOUR_USER_POOL_ID` (replace `YOUR_USER_POOL_ID` with the actual User Pool ID from Step 3).
 ![Image 13](/images/5-Workshop/5.8/5.8.13.png)
    * **Audience:** Enter the **App Client ID** (copied from Step 3).
 ![Image 14](/images/5-Workshop/5.8/5.8.14.png)
@@ -133,6 +133,6 @@ Now, map the API paths, attach their integrations, and configure authorization:
 2. Click on the stage named **`dev`**.
 3. Copy and save the **Invoke URL**:
    ```
-   https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev
+   https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev
    ```
    *(You will need this REST endpoint URL for frontend configuration).*

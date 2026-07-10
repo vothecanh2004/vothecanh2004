@@ -9,7 +9,7 @@ pre: " <b> 5.3. </b> "
 
 In this step, you will configure **Amazon Cognito** to manage user registration, authentication, and secure access tokens for host users. We will use the new application-centric Cognito console interface.
 
-### 1. Create User Pool (New AWS Console Flow)
+### 1. Create Amazon Cognito User Pool for Web Application (SPA)
 
 1. Open the **[Amazon Cognito console](https://console.aws.amazon.com/cognito/)**.
 ![Image 1](/images/5-Workshop/5-3-1.jpg)
@@ -68,7 +68,7 @@ Once the User Pool is created, you must configure security policies:
 ### 3. Record Cognito Details
 
 Make sure you copy and save the following credentials from the **User Pool Overview** page:
-*   **User Pool ID:** `us-east-1_xxxxxxxxx`
+*   **User Pool ID:** `ap-southeast-1_xxxxxxxxx`
 *   **App Client ID** (found in the App Clients tab): `xxxxxxxxxxxxxxxxxxxxxxxxxx`
 
 > [!IMPORTANT]

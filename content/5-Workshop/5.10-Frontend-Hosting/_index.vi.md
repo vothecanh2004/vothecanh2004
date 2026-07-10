@@ -104,10 +104,10 @@ Trong bước này, bạn sẽ cấu hình lưu trữ trang web tĩnh cho ứng 
 2. Cấu hình file môi trường frontend (ví dụ `.env` hoặc `config.js`) với các thông số AWS đã lưu:
    ```javascript
    const config = {
-       COGNITO_USER_POOL_ID: "us-east-1_xxxxxxxxx",
+       COGNITO_USER_POOL_ID: "ap-southeast-1_xxxxxxxxx",
        COGNITO_APP_CLIENT_ID: "xxxxxxxxxxxxxxxxxxxxxxxxxx",
-       REST_API_ENDPOINT: "https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev",
-       WEBSOCKET_API_ENDPOINT: "wss://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev"
+       REST_API_ENDPOINT: "https://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev",
+       WEBSOCKET_API_ENDPOINT: "wss://xxxxxxxxxx.execute-api.ap-southeast-1.amazonaws.com/dev"
    };
    ```
 3. Đóng gói mã nguồn tĩnh frontend:

@@ -61,8 +61,8 @@ Now, grant this role permission to access your specific DynamoDB tables, write e
                    "dynamodb:BatchWriteItem"
                ],
                "Resource": [
-                   "arn:aws:dynamodb:us-east-1:*:table/webquiz-dev-*",
-                   "arn:aws:dynamodb:us-east-1:*:table/webquiz-dev-*/index/*"
+                   "arn:aws:dynamodb:ap-southeast-1:*:table/webquiz-dev-*",
+                   "arn:aws:dynamodb:ap-southeast-1:*:table/webquiz-dev-*/index/*"
                ]
            },
            {
@@ -71,7 +71,7 @@ Now, grant this role permission to access your specific DynamoDB tables, write e
                "Action": [
                    "events:PutEvents"
                ],
-               "Resource": "arn:aws:events:us-east-1:*:event-bus/webquiz-dev-game-events"
+               "Resource": "arn:aws:events:ap-southeast-1:*:event-bus/webquiz-dev-game-events"
            },
            {
                "Sid": "WebSocketManagement",
@@ -79,7 +79,7 @@ Now, grant this role permission to access your specific DynamoDB tables, write e
                "Action": [
                    "execute-api:ManageConnections"
                ],
-               "Resource": "arn:aws:execute-api:us-east-1:*:*/dev/*"
+               "Resource": "arn:aws:execute-api:ap-southeast-1:*:*/dev/*"
            }
        ]
    }
