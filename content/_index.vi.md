@@ -13,7 +13,7 @@ chapter: false
 
 &emsp; **Email:** vothecanh2004@gmail.com
 
-&emsp; **Trường:** Đại học Công nghệnghệ TP.HCM
+&emsp; **Trường:** Đại học Công nghệ TP.HCM
 
 &emsp; **Ngành:** Công nghệ thông tin
 
@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/4/2026 đến ngày 12/7/2026
 
-![Your Profile Picture](/images/avatar.jpg)
+<img src="/images/avatar.jpg" alt="Ảnh đại diện" width="500">
 
 
 ### Nội dung báo cáo
