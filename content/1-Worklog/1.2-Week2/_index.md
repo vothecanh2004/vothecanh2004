@@ -8,27 +8,22 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Objectives:
 
-* Understand the core role of AWS IAM in identity management, access control, and cloud resource security.
-* Master core concepts: IAM User, Group, Policy, Role, and clearly differentiate between them.
-* Recognize security risks of the Root Account and best practices to protect the account.
-* Gain hands-on proficiency in creating Users/Groups, attaching Policies, and verifying access permissions on the AWS Console.
+* Understand the role and importance of AWS IAM in identity management and resource access permissions.
+* Master core concepts: IAM User, Group, Policy, and Role, and clearly distinguish between them.
+* Gain proficiency in creating Users/Groups, attaching Policies, and testing access permissions on the AWS Console.
 
-### Tasks to Deploy This Week:
-| Day | Task | Start Date | End Date | Resource Links |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ----------------------------------------- |
-| Mon | - Learn about AWS Identity and Access Management (IAM). <br> - Understand the role of IAM in identity management and authorization on AWS. | 27/04/2026 | 27/04/2026 | https://docs.aws.amazon.com/ |
-| Tue | - Learn about IAM Policies. <br>- Practice with sample IAM Policies. | 28/04/2026 | 28/04/2026 | https://docs.aws.amazon.com/ |
-| Wed | - Learn about IAM Roles. <br> - Understand the differences between an IAM User and an IAM Role. | 29/04/2026 | 29/04/2026 | https://docs.aws.amazon.com/ |
-| Thu | - Learn about the Root Account and the security risks associated with using the Root User. | 30/04/2026 | 30/04/2026 | https://docs.aws.amazon.com/ |
-| Fri | - **Hands-on Lab:** <br>&emsp; + Create an IAM User. <br>&emsp; + Create an IAM Group. <br>&emsp; + Attach IAM Policies to the User/Group. <br>&emsp; + Verify and test the access permissions of the IAM User after authorization. | 01/05/2026 | 01/05/2026 | |
+### Tasks to be Executed This Week:
 
-### Week 2 Key Achievements:
+| Day | Task | Start Date | Completion Date | Documentation Source |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| Mon | - Learn about AWS Identity and Access Management (IAM). <br> - Understand the role of IAM in identity management and access control on AWS. | 2026-04-27 | 2026-04-27 | https://docs.aws.amazon.com/ |
+| Tue | - Learn about IAM Policies. <br>- Practice with sample IAM Policies. | 2026-04-28 | 2026-04-28 | https://docs.aws.amazon.com/ |
+| Wed | - Learn about IAM Roles. <br> - Understand the differences between IAM Users and IAM Roles. | 2026-04-29 | 2026-04-29 | https://docs.aws.amazon.com/ |
+| Thu | - Learn about the Root Account and the security risks associated with using the Root User. | 2026-04-30 | 2026-04-30 | https://docs.aws.amazon.com/ |
+| Fri | - **Hands-on Practice:** <br>&emsp; + Create IAM Users. <br>&emsp; + Create IAM Groups. <br>&emsp; + Attach IAM Policies to Users/Groups. <br>&emsp; + Test IAM User access permissions after authorization. | 2026-05-01 | 2026-05-01 | |
 
-* Mastered core knowledge of the AWS Identity and Access Management (IAM) service and its critical role in secure identity management and resource authorization on AWS.
-* Gained a deep understanding of the structure and mechanics of IAM Policies, and successfully tested various common policy templates.
-* Clearly differentiated between IAM Users and IAM Roles, understanding specific use cases for when to grant permanent credentials (User) versus temporary delegation (Role).
-* Recognized the severe security risks of using the Root Account for daily operations and acquired knowledge on AWS Best Practices to safeguard the account.
-* Successfully completed hands-on labs via the AWS Management Console, including:
-  * Creating an IAM User and configuring permissions with an IAM Group.
-  * Attaching appropriate IAM Policies to Users/Groups following the principle of least privilege.
-  * Testing, verifying, and accurately assessing the IAM User's access permissions to ensure the system operates according to security design standards.
+### Week 2 Achievements:
+
+* Gained core knowledge of the AWS Identity and Access Management service.
+* Understood the structure and operation of IAM Policies, successfully experimenting with common policy templates.
+* Clearly distinguished between IAM Users and IAM Roles; fully grasped specific use cases for when to grant permanent credentials (User) versus temporary authorization (Role).

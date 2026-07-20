@@ -6,28 +6,24 @@ chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-
 ### Week 6 Objectives:
 
-* Research and design API architecture (HTTP and WebSocket) for the Web Quiz system.
-* Learn how to use AWS API Gateway and prepare Postman testing environment.
-* Practice creating basic APIs and understand API Gateway workflow.
+* Research and design the API architecture (HTTP and WebSocket) for the Web Quiz system.
+* Learn how to use AWS API Gateway and set up a testing environment with Postman.
+* Practice creating basic APIs and gain a solid understanding of API Gateway workflows.
 
+### Tasks to be Executed This Week:
 
-### Tasks to be deployed this week:
-| Day | Task | Start Date | End Date | Reference Documentation |
+| Day | Task | Start Date | Completion Date | Documentation Source |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Research and design API architecture (HTTP REST and WebSocket) <br> - Identify required endpoints for the Quiz system <br>- Learn how API Gateway works with Lambda | 25/05/2026   | 25/05/2026      | https://docs.aws.amazon.com/ |
-| Tue | - Design request/response structure for APIs <br>- Draw data flow diagram through API Gateway <br>- Prepare route specifications | 26/05/2026   | 26/05/2026      | |
-| Wed | - Create Postman Workspace <br>- Set up Postman Environment variables <br>- Create Collection folder structure for APIs | 27/05/2026   | 27/05/2026      | |
-| Thu | - Learn about HTTP API on API Gateway <br>- Learn about WebSocket API on API Gateway <br>- Learn how to configure CORS for API Gateway | 28/05/2026   | 28/05/2026      | https://docs.aws.amazon.com/ |
-| Fri | - **Hands-on:** <br>&emsp; + Create a simple HTTP API on API Gateway <br>&emsp; + Test API with Postman <br>&emsp; + Practice connecting API Gateway to a sample Lambda function | 29/05/2026   | 29/05/2026      
+| Mon | - Research API architecture design (HTTP REST and WebSocket). <br> - Identify required endpoints for the Quiz system. <br> - Learn how API Gateway integrates with AWS Lambda. | 2026-05-25 | 2026-05-25 | https://docs.aws.amazon.com/ |
+| Tue | - Design request/response structures for the APIs. <br> - Draw data flow diagrams through API Gateway. | 2026-05-26 | 2026-05-26 | |
+| Wed | - Create a Postman Workspace. <br> - Set up the Collections folder structure for the APIs. | 2026-05-27 | 2026-05-27 | |
+| Thu | - Learn about HTTP APIs on API Gateway. <br> - Learn about WebSocket APIs on API Gateway. <br> - Learn how to configure CORS for API Gateway. | 2026-05-28 | 2026-05-28 | https://docs.aws.amazon.com/ |
+| Fri | - **Hands-on Practice:** <br>&emsp; + Create a simple HTTP API on API Gateway. <br>&emsp; + Test the API using Postman. <br>&emsp; + Practice integrating API Gateway with a sample Lambda function. | 2026-05-29 | 2026-05-29 | |
 
+### Week 6 Achievements:
 
-### Key Outcomes Achieved in Week 6:
-
-* Successfully researched and designed complete API architecture for the Web Quiz system, including both HTTP REST API and WebSocket API.
-* Clearly identified required endpoints and data flow through API Gateway.
-* Fully prepared the Postman testing environment, including Workspace, Environment variables, and Collection structure.
-* Mastered basic knowledge of HTTP API and WebSocket API on AWS API Gateway, as well as how to configure CORS.
-* Successfully practiced creating a simple HTTP API and connecting it to Lambda function, while also testing the API via Postman.
+* Successfully researched and designed a complete API architecture for the Web Quiz system, covering both HTTP REST APIs and WebSocket APIs.
+* Mastered fundamental concepts of HTTP APIs and WebSocket APIs on AWS API Gateway.
+* Successfully built a simple HTTP API, integrated it with an AWS Lambda function, and tested the endpoints via Postman.

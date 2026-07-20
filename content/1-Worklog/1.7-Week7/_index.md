@@ -6,30 +6,26 @@ chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
-
 ### Week 7 Objectives:
 
-* Create and configure HTTP API on AWS API Gateway.
-* Configure CORS for HTTP API to support frontend.
-* Create Authorizer (Cognito JWT) for API to protect endpoints.
+* Create and configure HTTP APIs on AWS API Gateway.
+* Create a JWT Authorizer using AWS Cognito to secure API endpoints.
 * Create Integrations and Routes for Quiz and Room features.
 
+### Tasks to be Executed This Week:
 
-### Tasks to be deployed this week:
-| Day | Task | Start Date | End Date | Reference Documentation |
+| Day | Task | Start Date | Completion Date | Documentation Source |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Create HTTP API on API Gateway <br> - Configure API name and IP address type <br>- Create dev stage with auto-deploy enabled | 01/06/2026   | 01/06/2026      | https://docs.aws.amazon.com/ |
-| Tue | - Configure CORS for HTTP API <br>- Set up Access-Control-Allow-Origin, Headers, Methods, Max-Age | 02/06/2026   | 02/06/2026      | <https://docs.aws.amazon.com/> |
-| Wed | - Create JWT Authorizer <br>- Link Authorizer to Cognito User Pool <br>- Configure audience (App Client ID) | 03/06/2026   | 03/06/2026      | <https://docs.aws.amazon.com/> |
-| Thu | - Create Integrations for Lambda functions (quiz-crud, room-management) <br>- Create routes: /quizzes, /quizzes/{proxy+}, /rooms, /rooms/{pin}, /rooms/{pin}/join | 04/06/2026   | 04/06/2026      | <https://docs.aws.amazon.com/> |
-| Fri | - **Hands-on:** <br>&emsp; + Attach Integrations to Routes <br>&emsp; + Attach Authorizer to protected routes <br>&emsp; + Test HTTP API with Postman <br>&emsp; + Verify endpoints work correctly | 05/06/2026   | 05/06/2026      
+| Mon | - Create an HTTP API on API Gateway. <br> - Configure API name and IP address type. | 2026-06-01 | 2026-06-01 | https://docs.aws.amazon.com/ |
+| Tue | - Configure CORS settings for the HTTP API. | 2026-06-02 | 2026-06-02 | https://docs.aws.amazon.com/ |
+| Wed | - Create a JWT Authorizer. <br> - Link the Authorizer with AWS Cognito User Pool. <br> - Configure the audience (App Client ID). | 2026-06-03 | 2026-06-03 | https://docs.aws.amazon.com/ |
+| Thu | - Create Integrations for Lambda functions (`quiz-crud`, `room-management`). <br> - Create corresponding API routes. | 2026-06-04 | 2026-06-04 | https://docs.aws.amazon.com/ |
+| Fri | - **Hands-on Practice:** <br>&emsp; + Attach the Authorizer to protected routes. <br>&emsp; + Test HTTP APIs using Postman. <br>&emsp; + Verify that endpoints function properly. | 2026-06-05 | 2026-06-05 | |
 
+### Week 7 Achievements:
 
-### Key Outcomes Achieved in Week 7:
-
-* Successfully created HTTP API on AWS API Gateway with dev stage and auto-deploy enabled.
-* Fully configured CORS for API, allowing frontend to call API from different domain.
-* Successfully created and configured JWT Authorizer, linked to Cognito User Pool to protect endpoints.
-* Successfully created Integrations between API Gateway and Lambda functions (quiz-crud and room-management).
-* Fully created all required routes for the system (quizzes, rooms), while also attaching authorizer to authenticated routes.
-* Successfully tested API endpoints via Postman, ensuring JWT authentication flow works correctly.
+* Created an HTTP API on AWS API Gateway.
+* Successfully created and configured a Cognito JWT Authorizer.
+* Created Integrations between API Gateway and Lambda functions.
+* Set up all required routes and attached the Authorizer to routes demanding authentication.
+* Successfully tested API endpoints via Postman, ensuring the JWT authentication flow works seamlessly.

@@ -10,8 +10,8 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu tuần 5:
 
-* Nắm vững kiến thức nền tảng về Amazon VPC, cách thiết lập Public/Private Subnet và định tuyến qua Internet Gateway/NAT Gateway.
-* Hiểu vai trò của Amazon CloudWatch (giám sát, cảnh báo) và AWS CloudTrail (ghi vết lịch sử API).
+* Biết kiến thức nền tảng về Amazon VPC, cách thiết lập Public/Private Subnet và định tuyến qua Internet Gateway/NAT Gateway.
+* Hiểu vai trò của Amazon CloudWatch và AWS CloudTrail .
 * Hệ thống hóa và củng cố toàn bộ kiến thức cốt lõi đã học (IAM, EC2, S3, RDS, DynamoDB, VPC, CloudWatch, CloudTrail) để chuẩn bị cho giai đoạn triển khai dự án.
 
 ### Các công việc cần triển khai trong tuần này:
@@ -26,9 +26,7 @@ pre: " <b> 1.5. </b> "
 
 ### Kết quả đạt được tuần 5:
 
-* Nắm vững kiến thức nền tảng về Amazon Virtual Private Cloud (Amazon VPC), hiểu cách AWS thiết lập một mạng đám mây ảo cô lập và cách phân chia dải địa chỉ IP (CIDR block) để quản lý tài nguyên hệ thống.
-* Phân biệt rõ ràng vai trò của Public Subnet và Private Subnet; làm chủ cơ chế định tuyến dữ liệu ra Internet thông qua việc thiết lập Internet Gateway (cho Public Subnet) và NAT Gateway (giúp Private Subnet đi Internet an toàn một chiều).
-* Hiểu sâu về bộ đôi dịch vụ giám sát và kiểm toán của AWS:
-  * Amazon CloudWatch: Thu thập chỉ số (Metrics), theo dõi hiệu năng tài nguyên và thiết lập các ngưỡng cảnh báo tự động (Alarms).
-  * AWS CloudTrail: Ghi lại lịch sử toàn bộ các hoạt động, sự kiện và lời gọi API trong tài khoản nhằm phục vụ công tác bảo mật, tuân thủ pháp lý.
-* Củng cố và hệ thống hóa toàn bộ mạng lưới kiến thức cốt lõi đã học trong suốt hành trình, bao gồm các nhóm dịch vụ chủ chốt: Quản lý định danh (IAM), Điện toán (EC2), Lưu trữ (S3), Cơ sở dữ liệu (RDS, DynamoDB), Mạng (VPC) và Giám sát (CloudWatch, CloudTrail).
+* Biết kiến thức nền tảng về Amazon Virtual Private Cloud (Amazon VPC).
+* Phân biệt rõ ràng vai trò của Public Subnet và Private Subnet
+* Hiểu về bộ đôi dịch vụ giám sát và kiểm toán của AWS: Amazon CloudWatch, AWS CloudTrail
+* Củng cố kiến thức đã học

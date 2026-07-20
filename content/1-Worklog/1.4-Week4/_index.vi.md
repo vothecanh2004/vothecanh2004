@@ -13,7 +13,7 @@ pre: " <b> 1.4. </b> "
 ### Mục tiêu tuần 4:
 
 * Hiểu cơ chế lưu trữ đối tượng của Amazon S3 và cách lựa chọn Storage Classes tối ưu chi phí dựa trên tần suất truy cập.
-* Nắm vững nền tảng về cơ sở dữ liệu quan hệ Amazon RDS (SQL) và phi quan hệ Amazon DynamoDB (NoSQL).
+* Biết về nền tảng về cơ sở dữ liệu quan hệ Amazon RDS (SQL) và phi quan hệ Amazon DynamoDB (NoSQL).
 * Thực hành thành thạo: tạo S3 Bucket, cấu hình phân quyền Object, khởi tạo và kết nối MySQL Instance trên Amazon RDS.
 
 ### Các công việc cần triển khai trong tuần này:
@@ -28,11 +28,10 @@ pre: " <b> 1.4. </b> "
 
 ### Kết quả đạt được tuần 4:
 
-* Nắm vững kiến thức cốt lõi về Amazon Simple Storage Service (Amazon S3), cơ chế lưu trữ dạng đối tượng và các khái niệm liên quan như Bucket, Object, Key.
-* Phân biệt rõ ràng các lớp lưu trữ của S3 và biết cách lựa chọn lớp lưu trữ tối ưu chi phí dựa trên tần suất truy cập dữ liệu.
+* Biết kiến thức cốt lõi về Amazon Simple Storage Service (Amazon S3)
 * Hiểu sâu về dịch vụ cơ sở dữ liệu quan hệ Amazon RDS, các công cụ quản trị được hỗ trợ như MySQL, PostgreSQL, SQL Server... và cách AWS tự động hóa việc quản lý phần cứng, sao lưu.
-* Làm quen với Amazon DynamoDB và các đặc trưng cốt lõi của cơ sở dữ liệu NoSQL , đồng thời phân biệt rõ các tiêu chí lựa chọn giữa Amazon RDS (SQL) và Amazon DynamoDB (NoSQL).
-* Hoàn thành các bài thực hành thực tế trực tiếp trên AWS Console:
-  * Khởi tạo thành công S3 Bucket, thực hiện cấu hình phân quyền bảo mật (Public/Private Access) linh hoạt cho các Object lưu trữ bên trong.
-  * Khởi tạo hoàn chỉnh một cơ sở dữ liệu MySQL Instance trên dịch vụ Amazon RDS, thực hiện kết nối thành công và kiểm tra chính xác trạng thái hoạt động của RDS Instance.
+* Đọc biết về Amazon DynamoDB và các đặc trưng cốt lõi của cơ sở dữ liệu NoSQL , đồng thời phân biệt rõ các tiêu chí lựa chọn giữa Amazon RDS (SQL) và Amazon DynamoDB (NoSQL).
+
+ 
+ 
 

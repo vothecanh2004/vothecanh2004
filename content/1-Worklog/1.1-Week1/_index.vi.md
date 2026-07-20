@@ -23,20 +23,13 @@ pre: " <b> 1.1. </b> "
 | 3 | - Tìm hiểu kiến trúc hạ tầng toàn cầu của AWS.<br>- Tìm hiểu Region, Availability Zone (AZ), Edge Location và Local Zone. | 21/04/2026 | 21/04/2026 | https://aws.amazon.com/vi/?nc2=h_home |
 | 4 | - Đăng ký tài khoản AWS Free Tier.<br>- Đăng nhập AWS Management Console.<br>-  Tìm kiếm và ghim các dịch vụ IAM, EC2 và Amazon S3 vào mục Favorites.<br>- Xem Dashboard và theo dõi mục AWS Free Tier. | 22/04/2026 | 22/04/2026 | https://aws.amazon.com/free/|
 | 5 | -  Tìm hiểu cơ chế tính phí của AWS và AWS Free Tier. | 23/04/2026 | 23/04/2026 | https://aws.amazon.com/pricing/ |
-| 6 | - Thực hành sử dụng AWS Console.<br>&emsp;<br>&emsp;+ Khám phá các dịch vụ EC2, IAM và S3.<br>&emsp;+ Kiểm tra Billing Dashboard.<br>&emsp;+ Tạo Budget cảnh báo chi phí để tránh phát sinh ngoài Free Tier.<br>- Ôn tập toàn bộ kiến thức đã học trong tuần. | 24/04/2026 | 24/04/2026 | https://builder.aws.com/ |
+| 6 | - Thực hành sử dụng AWS Console.<br>&emsp;<br>&emsp;+ Khám phá các dịch vụ EC2, IAM và S3.<br>&emsp;+ Kiểm tra Billing Dashboard.<br>&emsp;+ Tạo Budget cảnh báo chi phí để tránh phát sinh ngoài Free Tier.<br>| 24/04/2026 | 24/04/2026 | https://builder.aws.com/ |
 
 ### Kết quả đạt được tuần 1:
 
-* Nắm vững khái niệm Cloud Computing, các mô hình dịch vụ  và phân biệt rõ ràng 3 mô hình triển khai (Public Cloud, Private Cloud, Hybrid Cloud).
+* Nắm vững khái niệm Cloud Computing, các mô hình dịch vụ  và phân biệt rõ ràng 3 mô hình triển khai .
 
 * Hiểu sâu về kiến trúc hạ tầng toàn cầu của AWS bao gồm cấu trúc và vai trò của Region, Availability Zone (AZ), Edge Location và Local Zone.
 
-* Thấu hiểu mô hình trách nhiệm chung  giữa AWS và khách hàng cùng cơ chế tính phí tổng quan của AWS.
-
-* Về kỹ năng thực hành (Hands-on):
 
 * Đăng ký thành công tài khoản AWS Free Tier và bước đầu làm quen, thao tác thành thạo giao diện AWS Management Console.
-
-* Biết cách tìm kiếm, khám phá và ghim các dịch vụ nền tảng (IAM, EC2, Amazon S3) vào mục Favorites để tiện quản lý cho các tuần tiếp theo.
-
-* Thực hành kiểm tra Billing Dashboard, theo dõi hạn mức sử dụng Free Tier và cấu hình thành công AWS Budget để nhận cảnh báo, chủ động kiểm soát chi phí tránh phát sinh ngoài ý muốn.

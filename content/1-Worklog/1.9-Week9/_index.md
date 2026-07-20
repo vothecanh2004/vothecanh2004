@@ -6,29 +6,24 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-
 ### Week 9 Objectives:
 
-* Update WEBSOCKET_ENDPOINT environment variable for Lambda functions.
-* Test full WebSocket flow (start game, next question, submit answer, end game).
-* Configure API Gateway stages and optimize.
+* Test the full WebSocket flow (start game, next question, submit answer, end game).
+* Configure API Gateway.
 * Write detailed API documentation.
 
+### Tasks to be Executed This Week:
 
-### Tasks to be deployed this week:
-| Day | Task | Start Date | End Date | Reference Documentation |
+| Day | Task | Start Date | Completion Date | Documentation Source |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Get WebSocket Connection URL from API Gateway <br> - Update WEBSOCKET_ENDPOINT for ws-message Lambda <br>- Update WEBSOCKET_ENDPOINT for score-calculator Lambda | 15/06/2026   | 15/06/2026      | https://docs.aws.amazon.com/ |
-| Tue | - Test full WebSocket flow: create room, join room <br>- Test START_GAME action <br>- Test NEXT_QUESTION action <br>- Test SUBMIT_ANSWER action <br>- Test END_GAME action | 16/06/2026   | 16/06/2026      | https://docs.aws.amazon.com/ |
-| Wed | - Configure logging for API Gateway stages <br>- Configure throttling if needed <br>- Check and optimize API Gateway performance | 17/06/2026   | 17/06/2026      | https://docs.aws.amazon.com/ |
-| Thu | - Write API documentation for HTTP API (endpoints, request/response, auth) <br>- Write API documentation for WebSocket (actions, events, message format) | 18/06/2026   | 18/06/2026      |  |
-| Fri | - **Hands-on:** <br>&emsp; + Test full integration between HTTP API and WebSocket API <br>&emsp; + Verify score-calculator receives events from EventBridge <br>&emsp; + Verify WebSocket broadcasts messages to all clients <br>&emsp; + Finalize API documentation | 19/06/2026   | 19/06/2026      
+| Mon | - Obtain the WebSocket Connection URL from API Gateway. | 2026-06-15 | 2026-06-15 | https://docs.aws.amazon.com/ |
+| Tue | - Test the complete WebSocket flow: create room, join room. <br>- Test `START_GAME` action. <br>- Test `NEXT_QUESTION` action. <br>- Test `SUBMIT_ANSWER` action. <br>- Test `END_GAME` action. | 2026-06-16 | 2026-06-16 | https://docs.aws.amazon.com/ |
+| Wed | - Configure stage logging for API Gateway. <br>- Audit and optimize API Gateway performance. | 2026-06-17 | 2026-06-17 | https://docs.aws.amazon.com/ |
+| Thu | - Write API documentation for HTTP APIs. <br>- Write API documentation for WebSocket APIs. | 2026-06-18 | 2026-06-18 | |
+| Fri | - **Hands-on Practice:** <br>&emsp; + Conduct end-to-end integration testing between HTTP APIs and WebSocket APIs. <br>&emsp; + Verify that WebSocket broadcasts messages to all connected clients. | 2026-06-19 | 2026-06-19 | |
 
+### Week 9 Achievements:
 
-### Key Outcomes Achieved in Week 9:
-
-* Successfully updated WEBSOCKET_ENDPOINT environment variable for required Lambda functions (ws-message and score-calculator).
-* Successfully tested full WebSocket flow: create room, join room, START_GAME, NEXT_QUESTION, SUBMIT_ANSWER, and END_GAME.
-* Fully configured logging and optimized performance for API Gateway stages.
-* Completed writing detailed API documentation for both HTTP API and WebSocket API, including endpoints, request/response format, authentication, and actions/events.
-* Ensured full integration between HTTP API, WebSocket API, Lambda, and EventBridge, with all game flows working correctly.
+* Updated the `WEBSOCKET_ENDPOINT` environment variable.
+* Successfully tested the full WebSocket flow: room creation, joining room, `START_GAME`, `NEXT_QUESTION`, `SUBMIT_ANSWER`, and `END_GAME`.
+* Ensured seamless integration among HTTP APIs, WebSocket APIs, and AWS Lambda functions.

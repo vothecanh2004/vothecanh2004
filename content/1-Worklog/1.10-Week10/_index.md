@@ -6,29 +6,25 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-
 ### Week 10 Objectives:
 
-* Final testing for all APIs (HTTP and WebSocket).
-* Create complete Postman Collection with all endpoints and WebSocket requests.
-* Load test API Gateway to ensure performance.
-* Fix API and WebSocket related bugs.
+* Conduct final testing for all APIs.
+* Perform load testing on API Gateway to ensure system performance and scalability.
+* Fix bugs related to APIs and WebSockets.
 
+### Tasks to be Executed This Week:
 
-### Tasks to be deployed this week:
-| Day | Task | Start Date | End Date | Reference Documentation |
+| Day | Task | Start Date | Completion Date | Documentation Source |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| Mon | - Final test all HTTP API endpoints (Quiz CRUD, Question CRUD, Room APIs) <br> - Test error cases (400, 401, 403, 404, 500) <br>- Test rate limiting if configured | 22/06/2026   | 22/06/2026      | https://learning.postman.com/ |
-| Tue | - Final test WebSocket API with all actions (START_GAME, NEXT_QUESTION, SUBMIT_ANSWER, END_GAME) <br>- Test WebSocket events (GAME_STARTED, NEXT_QUESTION, ANSWER_RECEIVED, SCORE_UPDATE, GAME_ENDED) | 23/06/2026   | 23/06/2026      |  |
-| Wed | - Create complete Postman Collection: <br>&emsp; + Folder for Authentication <br>&emsp; + Folder for Quiz APIs <br>&emsp; + Folder for Room APIs <br>&emsp; + Folder for WebSocket Testing <br>- Add examples for request/response | 24/06/2026   | 24/06/2026      | https://learning.postman.com/ |
-| Thu | - Load test API Gateway with many concurrent requests <br>- Check CloudWatch Metrics for latency and error rate | 25/06/2026   | 25/06/2026      | https://docs.aws.amazon.com/ |
-| Fri | - **Hands-on:** <br>&emsp; + Fix all bugs found during testing <br>&emsp; + Optimize API performance if needed <br>&emsp; + Export Postman Collection and share with team <br>&emsp; + Write usage guide for Postman Collection | 26/06/2026   | 26/06/2026      
+| Mon | - Perform final tests on all HTTP API endpoints (Quiz CRUD, Question CRUD, Room APIs). <br> - Test error handling scenarios (HTTP 400, 401, 403, 404, 500). | 2026-06-22 | 2026-06-22 | https://learning.postman.com/ |
+| Tue | - Perform final tests on WebSocket APIs across all actions (`START_GAME`, `NEXT_QUESTION`, `SUBMIT_ANSWER`, `END_GAME`). | 2026-06-23 | 2026-06-23 | |
+| Wed | - Test WebSocket events (`GAME_STARTED`, `NEXT_QUESTION`, `ANSWER_RECEIVED`, `SCORE_UPDATE`, `GAME_ENDED`). | 2026-06-24 | 2026-06-24 | https://learning.postman.com/ |
+| Thu | - Perform load testing on API Gateway under high concurrent requests. | 2026-06-25 | 2026-06-25 | https://docs.aws.amazon.com/ |
+| Fri | - **Hands-on Practice:** <br>&emsp; + Fix all issues and bugs identified during the testing phase. <br>&emsp; + Export the Postman Collection and share it with the team. <br>&emsp; + Write a user guide for the Postman Collection. | 2026-06-26 | 2026-06-26 | |
 
+### Week 10 Achievements:
 
-### Key Outcomes Achieved in Week 10:
-
-* Successfully final tested all HTTP API and WebSocket API, including both success and error cases.
-* Created complete Postman Collection with scientific structure, including Authentication, Quiz APIs, Room APIs, and WebSocket Testing, with examples.
-* Performed load testing and confirmed API Gateway handles many concurrent requests, checked Metrics on CloudWatch.
-* Fixed all API and WebSocket related bugs found during testing.
-* Exported Postman Collection and wrote usage guide, shared with team for easy testing and development.
+* Successfully completed final testing for all HTTP APIs and WebSocket APIs.
+* Built a well-structured and comprehensive Postman Collection.
+* Fixed all API and WebSocket bugs identified during testing.
+* Exported the Postman Collection and provided usage documentation to the team, facilitating seamless integration and further development.
